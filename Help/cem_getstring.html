@@ -1,0 +1,389 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="description" content="Basic service to retrieve the standard C string from the CE-type string." /><meta name="DC.Relation" scheme="URI" content="string_handling_apis.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="template" />        
+      <title>CEM_GetString()</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="template-d66e5132" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="template" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="overview_of_plug_ins"><span class="title"><a href="overview_of_plug_ins.html">Overview of plug-ins</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Developers can extend the functionality of the Control Center and Policy Controller         through plug-ins, which are separately
+                  installed pieces of software written in         Java.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="c_and_c___api_reference"><span class="title"><a href="c_and_c___api_reference.html">C and C++ API reference</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides a reference of API calls for C and C++.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="string_handling_apis"><span class="title"><a href="string_handling_apis.html">String-handling APIs</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The CEM APIs are basic service calls dedicated to handling CEtype strings. </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="template"><span class="title"><a href="cem_getstring.html">CEM_GetString()</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Basic service to retrieve the standard C string from the CE-type string.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" class="topicref" data-id="pep_client_sdk__openaz_api" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action pep_client_sdk__openaz_api-d66e3838-link" class="wh-expand-btn"></span><span class="title"><a href="pep_client_sdk__openaz_api.html" id="pep_client_sdk__openaz_api-d66e3838-link">PEP client SDK (OpenAz API)</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_the_openaz_pep_client_sdk-d66e3849" class="topicref" data-id="about_the_openaz_pep_client_sdk" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_the_openaz_pep_client_sdk.html" id="about_the_openaz_pep_client_sdk-d66e3849-link">About the OpenAz PEP client SDK</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">OpenAz is an open source initiative that provides a standards-based         interface.</p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="configuring_a_development_environment-d66e3860" class="topicref" data-id="configuring_a_development_environment" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="configuring_a_development_environment.html" id="configuring_a_development_environment-d66e3860-link">Configuring a development environment</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">To use this API, you must configure a development environment as described in the PEP         development process section.
+                        
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871" class="topicref" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871-link" class="wh-expand-btn"></span><span class="title"><a href="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep.html" id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871-link">Configuring one-way and two-way SSL authentication between PDP and PEP</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">For the REST API, you can configure the communication between a PDP server and a PEP         client using one-way or two-way
+                        SSL authentication.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_java_client_library-d66e3908" class="topicref" data-id="using_the_java_client_library" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_java_client_library-d66e3908-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_java_client_library.html" id="using_the_java_client_library-d66e3908-link">Using the Java client library</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to use NextLabs OpenAz PEP Java client with remote PDPs         (REST PDPs and CloudPDPs) and embedded
+                        PDPs.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_javascript_client_library-d66e4063" class="topicref" data-id="using_the_javascript_client_library" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_javascript_client_library-d66e4063-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_javascript_client_library.html" id="using_the_javascript_client_library-d66e4063-link">Using the JavaScript client library</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="rest_api_for_external_pdps-d66e4126" class="topicref" data-id="rest_api_for_external_pdps" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rest_api_for_external_pdps-d66e4126-link" class="wh-expand-btn"></span><span class="title"><a href="rest_api_for_external_pdps.html" id="rest_api_for_external_pdps-d66e4126-link">REST API for external PDPs</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the REST API to send policy evaluation requests to         external PDPs (Policy Decision
+                        Points).
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="overview_of_plug_ins-d66e4389" class="topicref" data-id="overview_of_plug_ins" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action overview_of_plug_ins-d66e4389-link" class="wh-expand-btn"></span><span class="title"><a href="overview_of_plug_ins.html" id="overview_of_plug_ins-d66e4389-link">Overview of plug-ins</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Developers can extend the functionality of the Control Center and Policy Controller         through plug-ins, which are separately
+                        installed pieces of software written in         Java.
+                        
+                     </p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="about_control_center_plug_ins-d66e4400" class="topicref" data-id="about_control_center_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_control_center_plug_ins-d66e4400-link" class="wh-expand-btn"></span><span class="title"><a href="about_control_center_plug_ins.html" id="about_control_center_plug_ins-d66e4400-link">About Control Center plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Control Center plug-ins, or extensions, are typically used by the ICENet server         (DABS) component.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="about_policy_controller_plug_ins-d66e4433" class="topicref" data-id="about_policy_controller_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_policy_controller_plug_ins-d66e4433-link" class="wh-expand-btn"></span><span class="title"><a href="about_policy_controller_plug_ins.html" id="about_policy_controller_plug_ins-d66e4433-link">About Policy Controller plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Policy Controller is the component that communicates with the Control Center and         the Policy Enforcement Points
+                              (PEPs).
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="using_attribute_provider_plug_ins-d66e4466" class="topicref" data-id="using_attribute_provider_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_attribute_provider_plug_ins-d66e4466-link" class="wh-expand-btn"></span><span class="title"><a href="using_attribute_provider_plug_ins.html" id="using_attribute_provider_plug_ins-d66e4466-link">Using attribute provider plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to develop attribute provider plug-ins.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="using_heartbeat_plug_ins-d66e4554" class="topicref" data-id="using_heartbeat_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_heartbeat_plug_ins-d66e4554-link" class="wh-expand-btn"></span><span class="title"><a href="using_heartbeat_plug_ins.html" id="using_heartbeat_plug_ins-d66e4554-link">Using heartbeat plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to develop heartbeat plug-ins.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="report_log_views-d66e4658" class="topicref" data-id="report_log_views" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action report_log_views-d66e4658-link" class="wh-expand-btn"></span><span class="title"><a href="report_log_views.html" id="report_log_views-d66e4658-link">Report log views</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Report developers can design custom reports against NextLabs policy activity data         that has been written to the Activity
+                              Journal database.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_sample_enforcer-d66e4768" class="topicref" data-id="using_the_sample_enforcer" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_sample_enforcer-d66e4768-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_sample_enforcer.html" id="using_the_sample_enforcer-d66e4768-link">Using the sample enforcer</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to use the sample enforcer, which illustrates the basic         controls available in SDKs.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="installing_the_policy_adapter_sdk-d66e4847" class="topicref" data-id="installing_the_policy_adapter_sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action installing_the_policy_adapter_sdk-d66e4847-link" class="wh-expand-btn"></span><span class="title"><a href="installing_the_policy_adapter_sdk.html" id="installing_the_policy_adapter_sdk-d66e4847-link">Installing the Policy Adapter SDK</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides instructions for installing the Policy Adapter SDK.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="true"><span data-tocid="c_and_c___api_reference-d66e4978" class="topicref" data-id="c_and_c___api_reference" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c_and_c___api_reference-d66e4978-link" class="wh-expand-btn"></span><span class="title"><a href="c_and_c___api_reference.html" id="c_and_c___api_reference-d66e4978-link">C and C++ API reference</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides a reference of API calls for C and C++.</p>
+                           </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="policy_evaluation_apis-d66e4989" class="topicref" data-id="policy_evaluation_apis" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="policy_evaluation_apis.html" id="policy_evaluation_apis-d66e4989-link">Policy evaluation APIs</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The CEEVALUATE APIs handle requests to the PDP to evaluate whether a given user         action is governed by a current policy.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="policy_evaluation_apis-d66e5000" class="topicref" data-id="policy_evaluation_apis" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="ceevaluate_checkfile().html" id="policy_evaluation_apis-d66e5000-link">CEEVALUATE_CheckFile()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call requests the Policy Controller to evaluate an operation that some user has         performed on a file, to determine
+                                    whether it is covered by a currently deployed         policy.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="sources_targets__and_attributes-d66e5011" class="topicref" data-id="sources_targets__and_attributes" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="sources_targets__and_attributes.html" id="sources_targets__and_attributes-d66e5011-link">Sources targets, and attributes</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Depending on the action supplied to the function call, the requirement of the source,         target and attributes are different.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="template-d66e5022" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="ceevaluate_checkmessageattachment.html" id="template-d66e5022-link">CEEVALUATE_CheckMessageAttachment()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call requests the Policy Controller to evaluate a user action that involves a         document attached to a message
+                                    such as an email or instant message, to determine whether it         is covered by a currently deployed policy.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="template-d66e5033" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="ceevaluate_checkportal.html" id="template-d66e5033-link">CEEVALUATE_CheckPortal()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call requests the Policy Controller to evaluate an operation that some user has         performed on some portal resource,
+                                    to determine whether it is covered by a currently         deployed policy.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="template-d66e5044" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="ceevaluate_checkresources.html" id="template-d66e5044-link">CEEVALUATE_CheckResources()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call requests the Policy Controller to evaluate an operation that some user has         performed on some document resource,
+                                    to determine whether it is covered by a currently         deployed policy.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="template-d66e5055" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="ceevaluate_checkresourcesex.html" id="template-d66e5055-link">CEEVALUATE_CheckResourcesEx()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call requests the Policy Controller to evaluate multiple policy queries about         user operations performed on document
+                                    resources, to determine whether they are covered by         deployed policies. 
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="template-d66e5066" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cem_createresource.html" id="template-d66e5066-link">CEM_CreateResource()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call creates a resource of a specified name and type, which is passed as a value         for the source and target arguments
+                                    in CEEVALUATE_CheckResources().
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="template-d66e5077" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="ceevaluate_freeenforcement.html" id="template-d66e5077-link">CEEVALUATE_FreeEnforcement()</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This special API provides the basic service that frees a specified CE type         CEEnforcement_t, which is an output from
+                                    the policy enforcement APIs, from the system. 
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem" aria-expanded="true"><span data-tocid="string_handling_apis-d66e5088" class="topicref" data-id="string_handling_apis" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action string_handling_apis-d66e5088-link" class="wh-expand-btn"></span><span class="title"><a href="string_handling_apis.html" id="string_handling_apis-d66e5088-link">String-handling APIs</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The CEM APIs are basic service calls dedicated to handling CEtype strings. </p>
+                                 </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="template-d66e5099" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cem_allocatestring.html" id="template-d66e5099-link">CEM_AllocateString()</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call provides a basic service to allocate memory for mapping a CEtype string to         a C or C++ string, so that it
+                                          can be used by the system. 
+                                          
+                                       </p>
+                                       </span></span></span></li>
+                           <li role="treeitem"><span data-tocid="template-d66e5110" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cem_freestring.html" id="template-d66e5110-link">CEM_FreeString()</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call frees a CE-type string from the system.</p>
+                                       </span></span></span></li>
+                           <li role="treeitem"><span data-tocid="template-d66e5121" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cem_reallocatestring.html" id="template-d66e5121-link">CEM_ReallocateString()</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This call reallocates the existing string to a new string.</p>
+                                       </span></span></span></li>
+                           <li role="treeitem" class="active"><span data-tocid="template-d66e5132" class="topicref" data-id="template" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cem_getstring.html" id="template-d66e5132-link">CEM_GetString()</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Basic service to retrieve the standard C string from the CE-type string.</p>
+                                       </span></span></span></li>
+                        </ul>
+                     </li>
+                     <li role="treeitem" aria-expanded="false"><span data-tocid="security_apis-d66e5144" class="topicref" data-id="security_apis" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action security_apis-d66e5144-link" class="wh-expand-btn"></span><span class="title"><a href="security_apis.html" id="security_apis-d66e5144-link">Security APIs</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The CEPROTECT APIs described in this section handle the enforcer’s security         functions.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem" aria-expanded="false"><span data-tocid="special_data_types-d66e5177" class="topicref" data-id="special_data_types" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action special_data_types-d66e5177-link" class="wh-expand-btn"></span><span class="title"><a href="special_data_types.html" id="special_data_types-d66e5177-link">Special data types</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Policy Adapter C SDK relies on a number of special data types, which are         identifiable by their “CE” prefix and,
+                                    for some, by a “_t” suffix as well. They         include:
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">CEM_GetString()</h1>
+    
+    <div class="body conbody"><p class="shortdesc">Basic service to retrieve the standard C string from the CE-type string.</p>
+        <p class="p">Syntax:</p>
+        <pre class="pre codeblock"><code>C/C++ Windows:
+const char *
+CEM_GetString (CEString cestr);
+C/C++ Linux:
+const TCHAR *
+CEM_GetString (CEString cestr);
+C/C++ Java:
+string *
+CEM_GetString (CEString cestr);</code></pre>
+        <table class="table" id="template__table_s4k_lf4_1gb"><caption><span class="table--title-label">Table 1. </span><span class="title">CEEvaluate_AllocateString arguments</span></caption><colgroup><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:40%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry" id="template__table_s4k_lf4_1gb__entry__1">Name</th>
+                        <th class="entry" id="template__table_s4k_lf4_1gb__entry__2">Direction</th>
+                        <th class="entry" id="template__table_s4k_lf4_1gb__entry__3">Type</th>
+                        <th class="entry" id="template__table_s4k_lf4_1gb__entry__4">Description</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry" headers="template__table_s4k_lf4_1gb__entry__1 ">cestr</td>
+                        <td class="entry" headers="template__table_s4k_lf4_1gb__entry__2 ">Input</td>
+                        <td class="entry" headers="template__table_s4k_lf4_1gb__entry__3 ">CEString</td>
+                        <td class="entry" headers="template__table_s4k_lf4_1gb__entry__4 ">CE-type string to retrieve</td>
+                    </tr>
+                </tbody></table>
+        <table class="table" id="template__table_t4k_lf4_1gb"><caption><span class="table--title-label">Table 2. </span><span class="title">CEM_AllocateString return values</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:66.66666666666666%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry" id="template__table_t4k_lf4_1gb__entry__1">Name</th>
+                        <th class="entry" id="template__table_t4k_lf4_1gb__entry__2">Description</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry" headers="template__table_t4k_lf4_1gb__entry__1 ">CEString</td>
+                        <td class="entry" headers="template__table_t4k_lf4_1gb__entry__2 ">NULL if the call failed due to invalid input; non-NULL if the call
+                            was successful</td>
+                    </tr>
+                </tbody></table>
+    </div>
+</article></main></div>
+                        
+                        
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

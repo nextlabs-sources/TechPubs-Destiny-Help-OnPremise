@@ -1,0 +1,468 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="description" content="A report is a formatted view of a particular set of information extracted from the Activity Journal, a set of database tables where policy activity data is logged." /><meta name="indexterms" content="creating, reports, defining, reports, To Field, Policy Decision field, Allow, filtering by, Deny, filtering by, Resource Type field, User Criteria, Action field, Paste, limited obligation support, Resource Criteria field, Policy Name field, Policy Criteria field, Other Criteria field, Report Type field, Show field, Sort By field, Max Results field, Display Columns field" /><meta name="DC.subject" content="creating, reports, defining, reports, To Field, Policy Decision field, Allow, filtering by, Deny, Resource Type field, User Criteria, Action field, Paste, limited obligation support, Resource Criteria field, Policy Name field, Policy Criteria field, Other Criteria field, Report Type field, Show field, Sort By field, Max Results field, Display Columns field" /><meta name="keywords" content="creating, reports, defining, reports, To Field, Policy Decision field, Allow, filtering by, Deny, Resource Type field, User Criteria, Action field, Paste, limited obligation support, Resource Criteria field, Policy Name field, Policy Criteria field, Other Criteria field, Report Type field, Show field, Sort By field, Max Results field, Display Columns field" /><meta name="DC.Relation" scheme="URI" content="working_with_reports.html" /><meta name="DC.Relation" scheme="URI" content="specifying_a_report_period.html" /><meta name="DC.Relation" scheme="URI" content="filtering_by_user_resource__and_policy.html" /><meta name="DC.Relation" scheme="URI" content="filtering_by_action.html" /><meta name="DC.Relation" scheme="URI" content="specifying_a_report_period.html" /><meta name="DC.Relation" scheme="URI" content="filtering_by_criteria.html" /><meta name="DC.Relation" scheme="URI" content="sample_reports.html" /><meta name="DC.Relation" scheme="URI" content="saving_reports.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="creating_a_report" />        
+      <title>Creating a report</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="creating_a_report-d66e3171" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="creating_a_report" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="working_with_reports"><span class="title"><a href="working_with_reports.html">Working with reports</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the <span class="ph uicontrol">Reports</span> tab to define,         save, and run reports about data or resource access and use, and policy enforcement,         throughout
+                  your enterprise.
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="creating_a_report"><span class="title"><a href="creating_a_report.html">Creating a report</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A report is a formatted view of a particular set of information extracted from the         Activity Journal, a set of database
+                  tables where policy activity data is logged.
+                  
+               </p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="managing_reports-d66e2975" class="topicref" data-id="managing_reports" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action managing_reports-d66e2975-link" class="wh-expand-btn"></span><span class="title"><a href="managing_reports.html" id="managing_reports-d66e2975-link">Managing Reports</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="introducing_reporter-d66e2985" class="topicref" data-id="introducing_reporter" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action introducing_reporter-d66e2985-link" class="wh-expand-btn"></span><span class="title"><a href="introducing_reporter.html" id="introducing_reporter-d66e2985-link">Introducing Reporter</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Reporter is the web-based interface used to generate reports on information use and         policy enforcement in your environment.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="about_the_reporter_console-d66e3029" class="topicref" data-id="about_the_reporter_console" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_the_reporter_console-d66e3029-link" class="wh-expand-btn"></span><span class="title"><a href="about_the_reporter_console_2.html" id="about_the_reporter_console-d66e3029-link">About the Reporter console</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Reporter console has three tabs: Dashboard, Reports, and Monitoring.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_reporter_dashboard-d66e3114" class="topicref" data-id="using_the_reporter_dashboard" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_reporter_dashboard-d66e3114-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_reporter_dashboard.html" id="using_the_reporter_dashboard-d66e3114-link">Using the Reporter Dashboard</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes the features of the Reporter Dashboard, the tab that displays         when you access Reporter.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="working_with_reports-d66e3147" class="topicref" data-id="working_with_reports" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action working_with_reports-d66e3147-link" class="wh-expand-btn"></span><span class="title"><a href="working_with_reports.html" id="working_with_reports-d66e3147-link">Working with reports</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the <span class="ph uicontrol">Reports</span> tab to define,         save, and run reports about data or resource access and use, and policy enforcement,         throughout
+                        your enterprise.
+                        
+                     </p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="reporting_functionality_and_permissions-d66e3161" class="topicref" data-id="reporting_functionality_and_permissions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="reporting_functionality_and_permissions.html" id="reporting_functionality_and_permissions-d66e3161-link">Reporting functionality and permissions</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="true" class="active"><span data-tocid="creating_a_report-d66e3171" class="topicref" data-id="creating_a_report" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action creating_a_report-d66e3171-link" class="wh-expand-btn"></span><span class="title"><a href="creating_a_report.html" id="creating_a_report-d66e3171-link">Creating a report</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A report is a formatted view of a particular set of information extracted from the         Activity Journal, a set of database
+                              tables where policy activity data is logged.
+                              
+                           </p>
+                           </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="specifying_a_report_period-d66e3182" class="topicref" data-id="specifying_a_report_period" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action specifying_a_report_period-d66e3182-link" class="wh-expand-btn"></span><span class="title"><a href="specifying_a_report_period.html" id="specifying_a_report_period-d66e3182-link">Specifying a report period</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">When specifying the start date and time and end date and time of the time period to         cover in a report, you need to
+                                    take into account the time zone where the system is         installed, and how long data is stored in the Activity Journal.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem" aria-expanded="false"><span data-tocid="filtering_by_user_resource__and_policy-d66e3215" class="topicref" data-id="filtering_by_user_resource__and_policy" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action filtering_by_user_resource__and_policy-d66e3215-link" class="wh-expand-btn"></span><span class="title"><a href="filtering_by_user_resource__and_policy.html" id="filtering_by_user_resource__and_policy-d66e3215-link">Filtering by user resource, and policy</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">When filtering policy activity data by user, resource, or policy, you can use either,         or both, of the following methods.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="filtering_by_action-d66e3257" class="topicref" data-id="filtering_by_action" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="filtering_by_action.html" id="filtering_by_action-d66e3257-link">Filtering by action</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">You can filter the policy activity data by user actions, such as create, run, or         rename.</p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+               <li role="treeitem"><span data-tocid="running_a_report-d66e3268" class="topicref" data-id="running_a_report" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="running_a_report.html" id="running_a_report-d66e3268-link">Running a report</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"><span class="ph phindex"></span></p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="viewing_report_output-d66e3279" class="topicref" data-id="viewing_report_output" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action viewing_report_output-d66e3279-link" class="wh-expand-btn"></span><span class="title"><a href="viewing_report_output.html" id="viewing_report_output-d66e3279-link">Viewing report output</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">When viewing the report output, you can drill down for additional         information.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="saving_reports-d66e3302" class="topicref" data-id="saving_reports" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="saving_reports.html" id="saving_reports-d66e3302-link">Saving reports</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="sample_reports_0-d66e3312" class="topicref" data-id="sample_reports_0" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action sample_reports_0-d66e3312-link" class="wh-expand-btn"></span><span class="title"><a href="sample_reports_0.html" id="sample_reports_0-d66e3312-link">Sample reports</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section presents examples of the available report formats, all representing a         simple set of event data returned
+                              by the same report query.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="report_anomalies-d66e3383" class="topicref" data-id="report_anomalies" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action report_anomalies-d66e3383-link" class="wh-expand-btn"></span><span class="title"><a href="report_anomalies.html" id="report_anomalies-d66e3383-link">Report anomalies</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Reports can show unexpected results at times, which may seem to reflect incorrect         behavior of policies, but in fact
+                              are a result of some of the ways Windows works internally,         or of inherent statistical issues.
+                              
+                           </p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="working_with_monitors_and_alerts-d66e3416" class="topicref" data-id="working_with_monitors_and_alerts" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action working_with_monitors_and_alerts-d66e3416-link" class="wh-expand-btn"></span><span class="title"><a href="working_with_monitors_and_alerts.html" id="working_with_monitors_and_alerts-d66e3416-link">Working with monitors and alerts</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the Monitoring tab to create policy monitors to         obtain notifications of policy enforcement
+                        activities that meet predefined         criteria.
+                        
+                     </p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Creating a report</h1>
+    
+    
+    <div class="body taskbody"><p class="shortdesc">A report is a formatted view of a particular set of information extracted from the
+        Activity Journal, a set of database tables where policy activity data is logged.</p>
+        <section class="section context" id="creating_a_report__context_st1_mbv_y2b">
+            <p class="p" id="creating_a_report__ae1183513">You create a report by defining a query—criteria, or filters, for the
+                policy activity data you want to include in the report—and specifying the display
+                options that determine how the data is presented.</p>
+            <p class="p">Just as policies can be designed to control information access and usage by types of
+                users, actions, resources, applications, and computers, you can design report
+                queries that filter policy activity data by attributes of those components. The
+                greater the number of filters, the fewer the number of records returned. For
+                example, compare the following queries: </p>
+            <ul class="ul" id="creating_a_report__ul_csd_mbv_y2b">
+                <li class="li">Retrieve data for deny enforcements of any policy (in other words, all
+                    policies), covering any action by any user on any resource, for one week. </li>
+                <li class="li">Retrieve data for deny enforcements by communication policies that cover only
+                    the email action on only documents classified as Confidential, for one
+                    week.</li>
+            </ul>
+            <p class="p">The first query specifies fewer conditions and retrieves more data than the
+                second.</p>
+            <p class="p">If you don’t specify any filters or change any of the default settings, the report
+                retrieves all policy activity data categorized as user-level events, for the current
+                day.</p>
+        </section>
+        <ol class="ol steps" id="creating_a_report__steps_qs4_jks_gfb"><li class="li step stepexpand">
+                <span class="ph cmd">Access the Reporter console: In the Control Center console, click
+                        <span class="ph uicontrol">Reports</span> on the left navigation bar.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click the <span class="ph uicontrol">Reports</span> tab, if it is not already open.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">If the query of an existing report is currently displayed in the Report Details
+                    pane, click <span class="ph uicontrol">New</span> at the bottom of the Saved Reports
+                    pane.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Define the report query and display options. Many of the fields are optional.
+                    Required fields are populated with default values.</span>
+                <div class="itemgroup info">
+                    <table class="table" id="creating_a_report__table_rqm_4ls_gfb"><caption><span class="table--title-label">Table 1. </span><span class="title">Report query and display fields</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:66.66666666666666%" /></colgroup><thead class="thead">
+                                <tr>
+                                    <th class="entry" id="creating_a_report__table_rqm_4ls_gfb__entry__1">Query field</th>
+                                    <th class="entry" id="creating_a_report__table_rqm_4ls_gfb__entry__2">Description</th>
+                                </tr>
+                            </thead><tbody class="tbody">
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">
+                                        <p class="p">From and To</p>
+                                    </td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The start date and time, and end date and
+                                        time, respectively, of the time period this report covers.
+                                        Click in the field to choose a date and time from the
+                                        calendar. When specifying a report period, you need to
+                                        consider the time zone of the system, and the time period of
+                                        data stored in the Activity Journal.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Event Level</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The level of event verbosity the report contains:<div class="p">
+                                            <ul class="ul" id="creating_a_report__ul_xrp_xls_gfb">
+                                                <li class="li">User Events (default)</li>
+                                                <li class="li">Application Events (application and user-level
+                                                  events)</li>
+                                                <li class="li">All System Events (system, application, and
+                                                  user-level events)</li>
+                                            </ul>
+                                        </div><p class="p">As a rule, you should leave this setting at <span class="ph">User
+                                                Events</span>. This setting significantly reduces the
+                                            amount of system noise. Application- or system-level
+                                            events are generally not useful in monitoring policy or
+                                            user activities.</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Policy Decision</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The type of enforcement effect to include
+                                        in this report:<p class="p">Allow: Instances when the policy permitted
+                                            the user to perform the action covered by the policy.
+                                            Report results are determined by the information that is
+                                            logged. For example, if the policy contains no On Allow
+                                            logging obligations, the report returns no On Allow data
+                                            regardless of whether you select this
+                                            option.</p><p class="p">Deny: Instances when the policy did not
+                                            allow the user to perform the action. Deny decisions are
+                                            always logged.</p><p class="p">Both: All instances when the policy
+                                            was enforced, with either Allow or Deny
+                                        effect.</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Resource Type</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The resource type to include in the
+                                        report. Resource types are the templates that include
+                                        information about attributes, actions, and obligations
+                                        available to components and policies.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Action</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The user action or actions to include in
+                                        this report. The list shows all currently defined actions
+                                        for the selected resource type. To select multiple actions,
+                                        press <span class="ph uicontrol">Ctrl</span> and click each action. If
+                                        no actions are selected, all actions are included in the
+                                            report.<p class="p">Policies involving Paste actions do not
+                                            support logging obligations, therefore, instances of
+                                            their enforcement are not included in
+                                        reports.</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">User Criteria</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">Additional user criteria by creating one
+                                        or more conditions. Each condition consists of a user
+                                        attribute, an operator, and a value. You must click the
+                                            <span class="ph uicontrol">+</span>button to add a condition to the
+                                        query.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Resource Criteria</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">Additional resource criteria specified
+                                        using conditions. Each condition consists of a resource
+                                        attribute, an operator, and a value. You must click the
+                                            <span class="ph uicontrol">+</span> button to add a condition to
+                                        the query.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Policy Full Name</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">One or more policies on which to filter,
+                                        or leave this field blank to include all policies. Use the
+                                        Policy Lookup window to browse through and select the
+                                        policies.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Policy Criteria</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">Additional policy criteria specified using
+                                        conditions. Each condition consists of a policy attribute,
+                                        an operator, and a value. You must click the
+                                            <span class="ph uicontrol">+</span> button to add a condition to
+                                        the query.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Other Criteria</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">Additional criteria specified using
+                                        conditions. Each condition consists of a general attribute
+                                        (for example, hostname, host IP, and application name), an
+                                        operator, and a value. You must click the
+                                            <span class="ph uicontrol">+</span> button to add a condition to
+                                        the query.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Report Type</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The output format in which to display the
+                                        data: Table, Bar Chart, Horizontal Bar Chart, or Pie Chart.
+                                        Use a table to display policy activity details in a
+                                        row-and-column format. Use a chart to display a summary of
+                                        policy activities.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Show</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The display options for the report type
+                                        (not available for Table type reports).</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Sort By</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The field on which to sort the data, and
+                                        select Asc to sort in ascending order or Desc to sort in
+                                        descending order. If the report type is a table, you can
+                                        sort the data by any attribute. If the report type is a
+                                        chart, you can sort either by the grouping item (user,
+                                        resource, policy, month, or day) or by Result Count (the
+                                        number of enforcement events for each user, resource,
+                                        policy, month, or
+                                            day).<div class="p">For
+                                            chart report types, select grouping options (grouping is
+                                            not available to table type
+                                                reports):<ul class="ul" id="creating_a_report__ul_wxg_wy1_cgb">
+                                                <li class="li">Group by User: The chart shows the number of
+                                                  enforcement events for each user covered by the
+                                                  report.</li>
+                                                <li class="li">Group by Resource: The chart shows the number of
+                                                  enforcement events for each resource covered by
+                                                  the report.</li>
+                                                <li class="li">Group by Policy: The chart shows the number of
+                                                  enforcement events for each policy covered by the
+                                                  report.</li>
+                                                <li class="li">Group by Month: The chart shows the number of
+                                                  enforcement events for each month covered by the
+                                                  report. Select this option only if the time period
+                                                  you specified spans more than one month.</li>
+                                                <li class="li">Group by Day: The chart shows the number of
+                                                  enforcement events for each day covered by the
+                                                  report.</li>
+                                            </ul></div></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Max Results</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The maximum number of results to display
+                                        in the table or chart. For charts, this number represents
+                                        the maximum number of bars in a bar chart, or slices in a
+                                        pie chart. For readability reasons, charts should display a
+                                        limited number of bars or slices. For a table, the number
+                                        represents the maximum number of rows (each row represents
+                                        an event). Tables that show a large number of rows present
+                                        the data on multiple pages.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__1 ">Display Columns</td>
+                                    <td class="entry" headers="creating_a_report__table_rqm_4ls_gfb__entry__2 ">The columns to display in a table. This
+                                        setting applies to a table only. USER_NAME, POLICY_FULLNAME,
+                                        POLICY_DECISION, HOST_NAME, and APPLICATION_NAME are
+                                        selected by default. To remove any of those columns or to
+                                        add other columns, click <img class="image" id="creating_a_report__image_bw4_kms_gfb" src="images/select_columns_icon.png" /> and use the arrow icons to move
+                                        columns out of, or into, the selected pane.</td>
+                                </tr>
+                            </tbody></table>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">Run</span> to generate the report.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">If you want to run report at a future time, save it by clicking <span class="ph"><span class="ph menucascade"><span class="ph uicontrol">Options</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Save</span></span></span>.</span>
+            </li></ol>
+    </div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="specifying_a_report_period.html" title="When specifying the start date and time and end date and time of the time period to cover in a report, you need to take into account the time zone where the system is installed, and how long data is stored in the Activity Journal.">Specifying a report period</a></div><div class="related_link"><a class="navheader_parent_path" href="sample_reports.html" title="This section presents examples of different report formats, all representing a small set of event data returned by the same report query.">Sample reports</a></div></div><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="filtering_by_criteria.html" title="To filter by user, resource, or policy criteria, use conditions in the User Criteria, Resource Criteria, or Policy Criteria fields.">Filtering by criteria</a></div><div class="related_link"><a class="navheader_parent_path" href="saving_reports.html" title="Saving reports">Saving reports</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="specifying_a_report_period.html" title="When specifying the start date and time and end date and time of the time period to cover in a report, you need to take into account the time zone where the system is installed, and how long data is stored in the Activity Journal.">Specifying a report period</a></div><div class="related_link"><a class="navheader_parent_path" href="sample_reports.html" title="This section presents examples of different report formats, all representing a small set of event data returned by the same report query.">Sample reports</a></div></div><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="filtering_by_criteria.html" title="To filter by user, resource, or policy criteria, use conditions in the User Criteria, Resource Criteria, or Policy Criteria fields.">Filtering by criteria</a></div><div class="related_link"><a class="navheader_parent_path" href="saving_reports.html" title="Saving reports">Saving reports</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

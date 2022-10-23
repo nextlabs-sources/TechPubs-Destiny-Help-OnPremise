@@ -1,0 +1,420 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" lang="en" dir="ltr">
+
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="wh-path2root" content="" /><title>Control Center 8.7.2 Administrator's Guide</title>
+        
+                
+        <script>
+            /**
+             * If an old URL is given, redirect to the corresponding topic from the WebHelp Responsive
+             */
+            var actualLocation = window.location.href;
+            var newLocation;
+            if (actualLocation.indexOf('/#')!=-1) {
+                newLocation = actualLocation.replace(/\/#/g, "/");
+                window.location.replace(newLocation);
+            }
+            if (actualLocation.match(/\/index\.(.*)#/gi)!=null) {
+                newLocation = actualLocation.replace(/\/index\.(.*)#/gi, "/");
+                window.location.replace(newLocation);
+            }
+        </script>
+
+        <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+        
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/main-page.css?buildId=2018080803" />
+
+        
+        <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"></script>
+
+        <script data-main="./oxygen-webhelp/app/main-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    </head>
+    <body class="wh_main_page">
+        <a href="#content" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span xmlns="" class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>        
+        
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_main_page_search " role="form">
+          
+          <div class="wh_welcome"></div>          
+          <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form>
+          
+        </div>
+        <div class="wh_content_area " id="content">
+            
+            <!-- This is the placeholder for the main page tiles. -->
+            <div class="container-fluid wh_content_flex_container">
+                <!-- This is the placeholder for the main page tiles. -->
+                
+                <!--
+                    This is the placeholder for the main page entries
+                    presented in a tree-like fashion.
+                -->
+                <div class=" wh_main_page_toc "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html" data-id="concept_cpl_f2h_f2b">Confidentiality notice</a></span><div class=" wh_toc_shortdesc " href="oxy_ex-1/reuse_topics/confidentiality_notice.html" data-id="concept_cpl_f2h_f2b">
+         THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE         REPRODUCED, PUBLISHED OR DISCLOSED
+            TO OTHERS WITHOUT COMPANY AUTHORIZATION.
+         
+      </div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="introduction-d66e35-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="introduction-d66e35-entries" tabindex="0"><span class="topicref"><a href="introduction.html" data-id="introduction">Introduction</a></span></span></span><div class=" wh_toc_shortdesc " href="introduction.html" data-id="introduction">
+         This guide explains how to configure and use NextLabs® Control Center after initial         setup is complete.
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="introduction-d66e35-entries" role="region" aria-labelledby="introduction-d66e35-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="configure_control_center.html" data-id="configure_control_center">Configure Control Center</a></span><div class=" wh_toc_shortdesc " href="configure_control_center.html" data-id="configure_control_center">
+            To use NextLabs Control Center to enforce policies, the system must be configured for         your environment, and policies
+               must be designed and deployed.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_the_console.html" data-id="about_the_console">About the console</a></span><div class=" wh_toc_shortdesc " href="about_the_console.html" data-id="about_the_console">
+            The web-based console of the Control Center enables administrators to manage         policies, users, system configuration,
+               and reports from a single interface.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_the_status_section.html" data-id="about_the_status_section">About the Status section</a></span><div class=" wh_toc_shortdesc " href="about_the_status_section.html" data-id="about_the_status_section">
+            The information available on the Status section is designed to help you monitor         current system activity.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="oxy_ex-1/reuse_topics/additional_resources.html" data-id="additional_resources">Additional resources</a></span><div class=" wh_toc_shortdesc " href="oxy_ex-1/reuse_topics/additional_resources.html" data-id="additional_resources">
+            For additional documentation and self-help resources go to the         NextLabs         Customer Portal at https://customer.nextlabs.com.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="oxy_ex-1/reuse_topics/contacting_support.html" data-id="contacting_support">Contacting Support</a></span><div class=" wh_toc_shortdesc " href="oxy_ex-1/reuse_topics/contacting_support.html" data-id="contacting_support">
+            For help with NextLabs products,         email         Technical Support at https://support.nextlabs.com.
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="about_the_dashboard-d66e114-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="about_the_dashboard-d66e114-entries" tabindex="0"><span class="topicref"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html" data-id="about_the_dashboard">About the Dashboard</a></span></span></span><div class=" wh_toc_shortdesc " href="oxy_ex-1/reuse_topics/about_the_dashboard.html" data-id="about_the_dashboard">
+         You access the Dashboard by clicking Dashboard on the left         navigation bar.
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="about_the_dashboard-d66e114-entries" role="region" aria-labelledby="about_the_dashboard-d66e114-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="oxy_ex-1/reuse_topics/understand_the_dashboard_data.html" data-id="understand_the_dashboard_data">Understand the Dashboard data</a></span><div class=" wh_toc_shortdesc " href="oxy_ex-1/reuse_topics/understand_the_dashboard_data.html" data-id="understand_the_dashboard_data">
+            This table summarizes the data presented in each of the predefined queries         represented on the Dashboard, and discusses
+               the possible implications of and uses of the         data displayed in each.
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="manage_access_to_the_console-d66e140-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="manage_access_to_the_console-d66e140-entries" tabindex="0"><span class="topicref"><a href="manage_access_to_the_console.html" data-id="manage_access_to_the_console">Manage access to the console</a></span></span></span><div class=" wh_toc_shortdesc " href="manage_access_to_the_console.html" data-id="manage_access_to_the_console">
+         This section explains how to manage user access to Control Center interface elements         through delegation policies,
+            which control access using attributes.
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="manage_access_to_the_console-d66e140-entries" role="region" aria-labelledby="manage_access_to_the_console-d66e140-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_delegation_policies.html" data-id="about_delegation_policies">About delegation policies</a></span></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="adding_and_editing_delegation_policies.html" data-id="adding_and_editing_delegation_policies">Adding and editing delegation policies</a></span><div class=" wh_toc_shortdesc " href="adding_and_editing_delegation_policies.html" data-id="adding_and_editing_delegation_policies">
+            Creating and editing delegation policies is similar to creating and editing the         policies that govern access to resources.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="deleting_delegation_policies.html" data-id="deleting_delegation_policies">Deleting delegation policies</a></span><div class=" wh_toc_shortdesc " href="deleting_delegation_policies.html" data-id="deleting_delegation_policies">
+            Deleting delegation policies removes them from the Control Center system.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_managing_user_accounts.html" data-id="about_managing_user_accounts">About managing user accounts</a></span><div class=" wh_toc_shortdesc " href="about_managing_user_accounts.html" data-id="about_managing_user_accounts">
+            Control Center user accounts enable users to log in to the Control Center web console         using a specified username and
+               password.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_importing_user_information_from_ad_sources.html" data-id="about_importing_user_information_from_ad_sources">About importing user information from AD sources</a></span><div class=" wh_toc_shortdesc " href="about_importing_user_information_from_ad_sources.html" data-id="about_importing_user_information_from_ad_sources">
+            You can connect the Control Center console to an Active Directory (AD) server to         import user information.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_importing_user_information_from_azure_ad.html" data-id="about_importing_user_information_from_ad_sources">About importing user information from Azure AD</a></span><div class=" wh_toc_shortdesc " href="about_importing_user_information_from_azure_ad.html" data-id="about_importing_user_information_from_ad_sources">
+            You can connect the Control Center console to Azure AD to import user and group         information. 
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="changing_the_superuser_password.html" data-id="changing_the_superuser_password">Changing the superuser password</a></span><div class=" wh_toc_shortdesc " href="changing_the_superuser_password.html" data-id="changing_the_superuser_password">
+            The superuser Administrator account cannot be deleted or renamed. However, anyone         logged in to the Control Center
+               interface with the superuser account can change the         superuser password as described in this section.
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="enrolling_users_hosts__and_groups-d66e375-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="enrolling_users_hosts__and_groups-d66e375-entries" tabindex="0"><span class="topicref"><a href="enrolling_users_hosts__and_groups.html" data-id="enrolling_users_hosts__and_groups">Enrolling users, hosts, and groups</a></span></span></span><div class=" wh_toc_shortdesc " href="enrolling_users_hosts__and_groups.html" data-id="enrolling_users_hosts__and_groups">
+         This section explains enrollment and provides instructions for enrolling users,         groups, and host groups from LDAP,
+            and         users and user groups from Azure Active Directory (Azure AD).
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="enrolling_users_hosts__and_groups-d66e375-entries" role="region" aria-labelledby="enrolling_users_hosts__and_groups-d66e375-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_enrollment.html" data-id="about_enrollment">About enrollment</a></span><div class=" wh_toc_shortdesc " href="about_enrollment.html" data-id="about_enrollment">
+            Enrollment is is the process of importing LDAP directory entities, SharePoint user         groups, hosts, and other entities
+               into the Control Center         database.         For Azure AD, only users and groups can be imported into the Control Center
+               database.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="entities_that_can_be_enrolled.html" data-id="entities_that_can_be_enrolled">Entities that can be enrolled</a></span><div class=" wh_toc_shortdesc " href="entities_that_can_be_enrolled.html" data-id="entities_that_can_be_enrolled">
+            The Control Center enrollment utilities import information about the underlying         information network, including the
+               entities described in this section.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_domain_group_enrollment.html" data-id="about_domain_group_enrollment">About Domain Group enrollment</a></span><div class=" wh_toc_shortdesc " href="about_domain_group_enrollment.html" data-id="about_domain_group_enrollment">
+            A Domain Group contains multiple User, Host, and Group sources, referred to as         subdomains, that can be managed together
+               in a single enrollment process.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="overview_of_enrollment_types_and_procedures.html" data-id="overview_of_enrollment_types_and_procedures">Overview of enrollment types and procedures</a></span><div class=" wh_toc_shortdesc " href="overview_of_enrollment_types_and_procedures.html" data-id="overview_of_enrollment_types_and_procedures">
+            Different types of enrollments require different arguments and use different         auxiliary files.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_the_enrollment_manager_utility.html" data-id="about_the_enrollment_manager_utility">About the Enrollment Manager utility</a></span><div class=" wh_toc_shortdesc " href="about_the_enrollment_manager_utility.html" data-id="about_the_enrollment_manager_utility">
+            The Enrollment Manager utility enrolls entities into the Network Information         Directory, directly from an LDAP directory,
+               an LDIF file, or         Azure         AD.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_enrollment_input_files.html" data-id="about_enrollment_input_files">About enrollment input files</a></span><div class=" wh_toc_shortdesc " href="about_enrollment_input_files.html" data-id="about_enrollment_input_files">
+            The command lines for enrolling and updating users, hosts and groups have several         filename parameters, which refer
+               to the following kinds of auxiliary input         files.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="enrolling_users_and_hosts.html" data-id="enrolling_users_and_hosts">Enrolling users and hosts</a></span><div class=" wh_toc_shortdesc " href="enrolling_users_and_hosts.html" data-id="enrolling_users_and_hosts">
+            This section includes procedures related to configuration options and for performing         enrollments:
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="how_to_maintain_enrollments.html" data-id="how_to_maintain_enrollments">How to maintain enrollments</a></span><div class=" wh_toc_shortdesc " href="how_to_maintain_enrollments.html" data-id="how_to_maintain_enrollments">
+            Once you have enrolled users, groups and hosts into your system, you need to keep the         information about them up to
+               date.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="managing_enrollment_tasks.html" data-id="managing_enrollment_tasks">Managing enrollment tasks</a></span><div class=" wh_toc_shortdesc " href="managing_enrollment_tasks.html" data-id="managing_enrollment_tasks">
+            This section describes how to use Enrollment Manager commands to perform managerial         tasks.
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="enrolling_other_entities-d66e1154-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="enrolling_other_entities-d66e1154-entries" tabindex="0"><span class="topicref"><a href="enrolling_other_entities.html" data-id="enrolling_other_entities">Enrolling other entities</a></span></span></span><div class=" wh_toc_shortdesc " href="enrolling_other_entities.html" data-id="enrolling_other_entities">
+         This section describes how to enroll applications, file shares, and         sites.
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="enrolling_other_entities-d66e1154-entries" role="region" aria-labelledby="enrolling_other_entities-d66e1154-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="enrolling_applications.html" data-id="enrolling_applications">Enrolling applications</a></span><div class=" wh_toc_shortdesc " href="enrolling_applications.html" data-id="enrolling_applications">
+            Applications, unlike users, cannot be automatically enrolled from LDAP         directories.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="enrolling_file_shares.html" data-id="enrolling_file_shares">Enrolling file shares</a></span><div class=" wh_toc_shortdesc " href="enrolling_file_shares.html" data-id="enrolling_file_shares">
+            Enrolling information about file shares ensures that the use of differing file share         paths to access the same document
+               does not result in inconsistent policy         enforcement.
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="defining_custom_properties-d66e1337-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="defining_custom_properties-d66e1337-entries" tabindex="0"><span class="topicref"><a href="defining_custom_properties.html" data-id="defining_custom_properties">Defining custom properties</a></span></span></span><div class=" wh_toc_shortdesc " href="defining_custom_properties.html" data-id="defining_custom_properties">
+         This section describes the procedures for defining custom properties for various         kinds of entities you define as components.
+            You cannot define custom properties for         Application or Action components.
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="defining_custom_properties-d66e1337-entries" role="region" aria-labelledby="defining_custom_properties-d66e1337-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="user_host_and_group_properties.html" data-id="user_host_and_group_properties">User, hosts, and application properties</a></span><div class=" wh_toc_shortdesc " href="user_host_and_group_properties.html" data-id="user_host_and_group_properties">
+            Each of the three LDAP entity types Users, Hosts, and         Applications         has a default set of properties (technically,
+               LDAP attributes), which are displayed in the         CONDITIONS         section of Subject components.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_property_manager.html" data-id="about_property_manager">About Property Manager</a></span><div class=" wh_toc_shortdesc " href="about_property_manager.html" data-id="about_property_manager">
+            The Property Manager utility (propertymgr.bat) enables you to         define custom properties for User and Computer components, and for user and host         groups.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="portal_content_properties.html" data-id="portal_content_properties">Portal content properties</a></span><div class=" wh_toc_shortdesc " href="portal_content_properties.html" data-id="portal_content_properties">
+            Portal content properties are the properties that appear by default in the Property         Name combo-box of the component
+               definition. 
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="managing_policy_enforcers-d66e1448-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="managing_policy_enforcers-d66e1448-entries" tabindex="0"><span class="topicref"><a href="managing_policy_enforcers.html" data-id="managing_policy_enforcers">Managing policy enforcers</a></span></span></span></div><div class=" wh_main_page_toc_accordion_entries " id="managing_policy_enforcers-d66e1448-entries" role="region" aria-labelledby="managing_policy_enforcers-d66e1448-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_policy_enforcers.html" data-id="about_policy_enforcers">About policy enforcers</a></span><div class=" wh_toc_shortdesc " href="about_policy_enforcers.html" data-id="about_policy_enforcers">
+            Policy enforcers are Control Center clients that monitor document access and use, and         enforce policies at the point
+               of use.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="adding_policy_enforcers.html" data-id="adding_policy_enforcers">Adding policy enforcers</a></span><div class=" wh_toc_shortdesc " href="adding_policy_enforcers.html" data-id="adding_policy_enforcers">
+            If you need to add enforcers, you can do so at any time using managed installation         methods, such as a login script
+               or Windows Group Policy Object (GPO).
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_icenet_servers_and_policy_enforcer_profiles.html" data-id="about_icenet_servers_and_policy_enforcer_profiles">About ICENet servers and policy enforcer profiles</a></span></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="load_balancing.html" data-id="load_balancing">Load balancing</a></span></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="stopping_policy_enforcers.html" data-id="stopping_policy_enforcers">Stopping policy enforcers</a></span><div class=" wh_toc_shortdesc " href="stopping_policy_enforcers.html" data-id="stopping_policy_enforcers">
+            There are occasions when you might want to stop the execution of the policy enforcer         on a particular machine without
+               uninstalling it. 
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="restarting_policy_enforcers.html" data-id="restarting_policy_enforcers">Restarting policy enforcers</a></span></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="service_user_account_permissions.html" data-id="service_user_account_permissions">Service user account permissions</a></span></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="uninstalling_policy_enforcers.html" data-id="uninstalling_policy_enforcers">Uninstalling policy enforcers</a></span><div class=" wh_toc_shortdesc " href="uninstalling_policy_enforcers.html" data-id="uninstalling_policy_enforcers">
+            Before you can uninstall any enforcer, you must stop it. 
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="reconfiguring_policy_enforcers.html" data-id="reconfiguring_policy_enforcers">Reconfiguring policy enforcers</a></span><div class=" wh_toc_shortdesc " href="reconfiguring_policy_enforcers.html" data-id="reconfiguring_policy_enforcers">
+            Occasionally, you might need to move a desktop or file server enforcer from one         Control Center to another, such as
+               when moving a PC from one domain to another.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="viewing_policy_enforcer_status.html" data-id="viewing_policy_enforcer_status">Viewing policy enforcer status</a></span><div class=" wh_toc_shortdesc " href="viewing_policy_enforcer_status.html" data-id="viewing_policy_enforcer_status">
+            You can view the policy enforcer status in the Administration &gt; System Settings &gt;  Policy Enforcer Status section.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="managing_policy_enforcer_profiles.html" data-id="managing_policy_enforcer_profiles">Managing policy enforcer profiles</a></span></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="database_management.html" data-id="database_management">Database management</a></span><div class=" wh_toc_shortdesc " href="database_management.html" data-id="database_management">
+            This section describes the configuration tools available for configuring database         access generally, and for managing
+               and tuning the Activity Journal—the database where the         Report Server maintains an archive of the data it collects.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="configuration_tools.html" data-id="configuration_tools">Configuration tools</a></span><div class=" wh_toc_shortdesc " href="configuration_tools.html" data-id="configuration_tools">
+            This section describes the tools available for modifying the configuration of Control         Center after it is installed.
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="policy_and_policy_model_overview-d66e2359-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="policy_and_policy_model_overview-d66e2359-entries" tabindex="0"><span class="topicref"><a href="policy_and_policy_model_overview.html" data-id="policy_and_policy_model_overview">Policy and Policy Model overview</a></span></span></span><div class=" wh_toc_shortdesc " href="policy_and_policy_model_overview.html" data-id="policy_and_policy_model_overview">
+         This section provides an overview of policies and explains how to create and manage         Policy Model resource types and
+            policy components.
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="policy_and_policy_model_overview-d66e2359-entries" role="region" aria-labelledby="policy_and_policy_model_overview-d66e2359-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_policies.html" data-id="about_policies">About policies</a></span><div class=" wh_toc_shortdesc " href="about_policies.html" data-id="about_policies">
+            Policies are statements that describe resource usage situations and specify the         actions to be taken when those situations
+               arise.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="overview_of_policy_implementation.html" data-id="overview_of_policy_implementation">Overview of policy implementation</a></span><div class=" wh_toc_shortdesc " href="overview_of_policy_implementation.html" data-id="overview_of_policy_implementation">
+            Implementing policies involves several tasks.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="managing_policy_model_resource_types.html" data-id="managing_policy_model_resource_types">Managing Policy Model resource types</a></span><div class=" wh_toc_shortdesc " href="managing_policy_model_resource_types.html" data-id="managing_policy_model_resource_types">
+            Policy Model resource types are the templates that include information about         attributes, actions, and obligations.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="managing_policy_components.html" data-id="managing_policy_components">Managing policy components</a></span><div class=" wh_toc_shortdesc " href="managing_policy_components.html" data-id="managing_policy_components">
+            Policy components are the abstract building blocks or raw material of information         control policies.
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="constructing_and_testing_policies-d66e2461-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="constructing_and_testing_policies-d66e2461-entries" tabindex="0"><span class="topicref"><a href="constructing_and_testing_policies.html" data-id="constructing_and_testing_policies">Constructing and testing policies</a></span></span></span><div class=" wh_toc_shortdesc " href="constructing_and_testing_policies.html" data-id="constructing_and_testing_policies">
+         This section describes how to construct policies. Policies are rules designed to         control information use in an organization.
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="constructing_and_testing_policies-d66e2461-entries" role="region" aria-labelledby="constructing_and_testing_policies-d66e2461-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="constructing_policies.html" data-id="constructing_policies">Constructing policies</a></span><div class=" wh_toc_shortdesc " href="constructing_policies.html" data-id="constructing_policies">
+            Policy designers construct policies to control information access and use in an         organization.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="using_advanced_conditions.html" data-id="using_advanced_conditions">Using Advanced Conditions</a></span><div class=" wh_toc_shortdesc " href="using_advanced_conditions.html" data-id="using_advanced_conditions">
+            Advanced Conditions are ACPL (Active Control Policy Language) expressions that can be         used to include parameters that
+               cannot be conveyed by policy components, such as user and         resource components.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="managing_subpolicies.html" data-id="managing_subpolicies">Managing subpolicies</a></span><div class=" wh_toc_shortdesc " href="managing_subpolicies.html" data-id="managing_subpolicies">
+            Subpolicies are policies that can be included in other policies; they are the         children of parent policies.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="viewing_and_editing_policy_and_component_information.html" data-id="viewing_and_editing_policy_and_component_information">Viewing and editing policy and component information</a></span><div class=" wh_toc_shortdesc " href="viewing_and_editing_policy_and_component_information.html" data-id="viewing_and_editing_policy_and_component_information">
+            You can view information related to policies and components, including the hierarchy         among related policies or components,
+               their change history, and their         properties.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="cloning_policies_and_components.html" data-id="cloning_policies_and_components">Cloning policies and components</a></span><div class=" wh_toc_shortdesc " href="cloning_policies_and_components.html" data-id="cloning_policies_and_components">
+            When you need to create policies and components that are similar to existing policies         and components, it is often
+               more efficient to make a copy of existing items and then make         the desired changes in the duplicate, rather than build
+               the new policy and components from         scratch.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="using_audit_policies.html" data-id="using_audit_policies">Using audit policies</a></span><div class=" wh_toc_shortdesc " href="using_audit_policies.html" data-id="using_audit_policies">
+            There are two available enforcement types.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="constructing_delegated_administration_policies.html" data-id="constructing_delegated_administration_policies">Constructing Delegated Administration policies</a></span><div class=" wh_toc_shortdesc " href="constructing_delegated_administration_policies.html" data-id="constructing_delegated_administration_policies">
+            Delegated Administration policies enables administrators to manage user access to the         Control Center interfaces as
+               well as policies, and policy objects using rules based on user         attributes and conditions.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="testing_policies.html" data-id="testing_policies">Testing policies</a></span><div class=" wh_toc_shortdesc " href="testing_policies.html" data-id="testing_policies">
+            After policies are saved, you can test them using the Control Center         console.
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="deploying_and_managing_objects-d66e2751-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="deploying_and_managing_objects-d66e2751-entries" tabindex="0"><span class="topicref"><a href="deploying_and_managing_objects.html" data-id="deploying_and_managing_objects">Deploying and managing objects</a></span></span></span><div class=" wh_toc_shortdesc " href="deploying_and_managing_objects.html" data-id="deploying_and_managing_objects">
+         This section explains how to deploy and manage objects, such as policies and         components.
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="deploying_and_managing_objects-d66e2751-entries" role="region" aria-labelledby="deploying_and_managing_objects-d66e2751-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_deployment.html" data-id="about_deployment">About deployment</a></span><div class=" wh_toc_shortdesc " href="about_deployment.html" data-id="about_deployment">
+            Deployment places objects into a state where policies can be sent to policy         enforcement points (PEPs) at the next
+               heartbeat and enforced throughout the         network.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="deploying_components.html" data-id="deploying_components">Deploying components</a></span><div class=" wh_toc_shortdesc " href="deploying_components.html" data-id="deploying_components">
+            Components used in policies must be deployed before policies that use those         components can be enforced.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="deploying_policies.html" data-id="deploying_policies">Deploying policies</a></span><div class=" wh_toc_shortdesc " href="deploying_policies.html" data-id="deploying_policies">
+            Policies must be deployed before they can be enforced.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="managing_policies_and_components.html" data-id="managing_policies_and_components">Managing policies and components</a></span><div class=" wh_toc_shortdesc " href="managing_policies_and_components.html" data-id="managing_policies_and_components">
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="exporting_and_importing_policies-d66e2875-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="exporting_and_importing_policies-d66e2875-entries" tabindex="0"><span class="topicref"><a href="exporting_and_importing_policies.html" data-id="exporting_and_importing_policies">Exporting and Importing Policies</a></span></span></span><div class=" wh_toc_shortdesc " href="exporting_and_importing_policies.html" data-id="exporting_and_importing_policies">
+         This section describes how to export and import policies.
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="exporting_and_importing_policies-d66e2875-entries" role="region" aria-labelledby="exporting_and_importing_policies-d66e2875-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_exporting_and_importing_policies_and_other_items.html" data-id="about_exporting_and_importing_policies_and_other_items">About exporting and importing policies and other items</a></span><div class=" wh_toc_shortdesc " href="about_exporting_and_importing_policies_and_other_items.html" data-id="about_exporting_and_importing_policies_and_other_items">
+            Exporting and importing policies enables you to share policy objects defined in one         instance of Control Center with
+               other instances of Control Center. 
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="exporting_and_importing_objects_using_the_control_center_interface.html" data-id="exporting_and_importing_objects_using_the_control_center_interface">Exporting and importing objects using the Control Center interface</a></span><div class=" wh_toc_shortdesc " href="exporting_and_importing_objects_using_the_control_center_interface.html" data-id="exporting_and_importing_objects_using_the_control_center_interface">
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="import_export_policies_securely.html" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep">Exporting and importing policies securely</a></span><div class=" wh_toc_shortdesc " href="import_export_policies_securely.html" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep">
+            Control Center enables authorized users to export and import policies and their         components that are signed and encrypted
+               using the Advanced Encryption Standard (AES-256)         specification.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="using_versions.html" data-id="using_versions">Using versions</a></span><div class=" wh_toc_shortdesc " href="using_versions.html" data-id="using_versions">
+            The version mechanism is useful in keeping track of changing objects whose         definitions evolve, so you can see the
+               definitions of previously deployed         policies.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_object_states.html" data-id="about_object_states">About object states</a></span><div class=" wh_toc_shortdesc " href="about_object_states.html" data-id="about_object_states">
+            The following table lists the possible states of components, policies, and Policy         Model objects.
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="managing_reports-d66e2975-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="managing_reports-d66e2975-entries" tabindex="0"><span class="topicref"><a href="managing_reports.html" data-id="managing_reports">Managing Reports</a></span></span></span><div class=" wh_toc_shortdesc " href="managing_reports.html" data-id="managing_reports">
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="managing_reports-d66e2975-entries" role="region" aria-labelledby="managing_reports-d66e2975-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="introducing_reporter.html" data-id="introducing_reporter">Introducing Reporter</a></span><div class=" wh_toc_shortdesc " href="introducing_reporter.html" data-id="introducing_reporter">
+            Reporter is the web-based interface used to generate reports on information use and         policy enforcement in your environment.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_the_reporter_console_2.html" data-id="about_the_reporter_console">About the Reporter console</a></span><div class=" wh_toc_shortdesc " href="about_the_reporter_console_2.html" data-id="about_the_reporter_console">
+            The Reporter console has three tabs: Dashboard, Reports, and Monitoring.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="using_the_reporter_dashboard.html" data-id="using_the_reporter_dashboard">Using the Reporter Dashboard</a></span><div class=" wh_toc_shortdesc " href="using_the_reporter_dashboard.html" data-id="using_the_reporter_dashboard">
+            This section describes the features of the Reporter Dashboard, the tab that displays         when you access Reporter.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="working_with_reports.html" data-id="working_with_reports">Working with reports</a></span><div class=" wh_toc_shortdesc " href="working_with_reports.html" data-id="working_with_reports">
+            This section describes how to use the Reports tab to define,         save, and run reports about data or resource access and use, and policy enforcement,         throughout
+               your enterprise.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="working_with_monitors_and_alerts.html" data-id="working_with_monitors_and_alerts">Working with monitors and alerts</a></span><div class=" wh_toc_shortdesc " href="working_with_monitors_and_alerts.html" data-id="working_with_monitors_and_alerts">
+            This section describes how to use the Monitoring tab to create policy monitors to         obtain notifications of policy enforcement
+               activities that meet predefined         criteria.
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="overview_of_pep_development-d66e3738-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="overview_of_pep_development-d66e3738-entries" tabindex="0"><span class="topicref"><a href="overview_of_pep_development.html" data-id="overview_of_pep_development">Overview of PEP development</a></span></span></span><div class=" wh_toc_shortdesc " href="overview_of_pep_development.html" data-id="overview_of_pep_development">
+         This section provides an overview of PDPs (policy decision points) and PEPs (policy         enforcement points). It also describes
+            how to develop them using SDKs and APIs.
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="overview_of_pep_development-d66e3738-entries" role="region" aria-labelledby="overview_of_pep_development-d66e3738-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_peps_and_interactions_with_pdps.html" data-id="about_peps_and_interactions_with_pdps">About PEPs and interactions with PDPs</a></span><div class=" wh_toc_shortdesc " href="about_peps_and_interactions_with_pdps.html" data-id="about_peps_and_interactions_with_pdps">
+            PEPs (policy enforcement points) are software components that intercept user events         and enforce authorization decisions
+               provided by PDPs (policy decision points).
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="applications_to_be_enforced_and_available_sdks.html" data-id="applications_to_be_enforced_and_available_sdks">Applications to be enforced and available SDKs</a></span><div class=" wh_toc_shortdesc " href="applications_to_be_enforced_and_available_sdks.html" data-id="applications_to_be_enforced_and_available_sdks">
+            All the SDKs provide the same core functionality—the means of creating a PEP to send         policy evaluation requests to
+               the PDP and to receive policy decisions (deny or allow) from         the PDP.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="pep_development_process.html" data-id="pep_development_process">PEP development process</a></span><div class=" wh_toc_shortdesc " href="pep_development_process.html" data-id="pep_development_process">
+            Building PEPs involves these steps.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="policy_controller_components.html" data-id="policy_controller_components">Policy Controller components</a></span><div class=" wh_toc_shortdesc " href="policy_controller_components.html" data-id="policy_controller_components">
+            The functional components of the Policy Controller (PDP) include the         following.
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="pep_client_sdk__openaz_api-d66e3838-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="pep_client_sdk__openaz_api-d66e3838-entries" tabindex="0"><span class="topicref"><a href="pep_client_sdk__openaz_api.html" data-id="pep_client_sdk__openaz_api">PEP client SDK (OpenAz API)</a></span></span></span><div class=" wh_toc_shortdesc " href="pep_client_sdk__openaz_api.html" data-id="pep_client_sdk__openaz_api">
+         This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="pep_client_sdk__openaz_api-d66e3838-entries" role="region" aria-labelledby="pep_client_sdk__openaz_api-d66e3838-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="about_the_openaz_pep_client_sdk.html" data-id="about_the_openaz_pep_client_sdk">About the OpenAz PEP client SDK</a></span><div class=" wh_toc_shortdesc " href="about_the_openaz_pep_client_sdk.html" data-id="about_the_openaz_pep_client_sdk">
+            OpenAz is an open source initiative that provides a standards-based         interface.
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="configuring_a_development_environment.html" data-id="configuring_a_development_environment">Configuring a development environment</a></span><div class=" wh_toc_shortdesc " href="configuring_a_development_environment.html" data-id="configuring_a_development_environment">
+            To use this API, you must configure a development environment as described in the PEP         development process section.
+               
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep.html" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep">Configuring one-way and two-way SSL authentication between PDP and PEP</a></span><div class=" wh_toc_shortdesc " href="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep.html" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep">
+            For the REST API, you can configure the communication between a PDP server and a PEP         client using one-way or two-way
+               SSL authentication.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="using_the_java_client_library.html" data-id="using_the_java_client_library">Using the Java client library</a></span><div class=" wh_toc_shortdesc " href="using_the_java_client_library.html" data-id="using_the_java_client_library">
+            This section explains how to use NextLabs OpenAz PEP Java client with remote PDPs         (REST PDPs and CloudPDPs) and embedded
+               PDPs.
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="using_the_javascript_client_library.html" data-id="using_the_javascript_client_library">Using the JavaScript client library</a></span><div class=" wh_toc_shortdesc " href="using_the_javascript_client_library.html" data-id="using_the_javascript_client_library">
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="rest_api_for_external_pdps.html" data-id="rest_api_for_external_pdps">REST API for external PDPs</a></span><div class=" wh_toc_shortdesc " href="rest_api_for_external_pdps.html" data-id="rest_api_for_external_pdps">
+            This section describes how to use the REST API to send policy evaluation requests to         external PDPs (Policy Decision
+               Points).
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="overview_of_plug_ins.html" data-id="overview_of_plug_ins">Overview of plug-ins</a></span><div class=" wh_toc_shortdesc " href="overview_of_plug_ins.html" data-id="overview_of_plug_ins">
+            Developers can extend the functionality of the Control Center and Policy Controller         through plug-ins, which are separately
+               installed pieces of software written in         Java.
+            
+         </div></div></div><div class=" wh_main_page_toc_accordion_header "><span role="heading" aria-level="1" id="appendix-d66e5331-heading"><span role="button" aria-expanded="false" class="header-button" aria-controls="appendix-d66e5331-entries" tabindex="0"><span class="topicref"><a href="appendix.html" data-id="appendix">Appendix</a></span></span></span><div class=" wh_toc_shortdesc " href="appendix.html" data-id="appendix">
+         
+      </div></div><div class=" wh_main_page_toc_accordion_entries " id="appendix-d66e5331-entries" role="region" aria-labelledby="appendix-d66e5331-heading"><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="faqs_and_troubleshooting.html" data-id="faqs_and_troubleshooting">FAQs and troubleshooting</a></span><div class=" wh_toc_shortdesc " href="faqs_and_troubleshooting.html" data-id="faqs_and_troubleshooting">
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="password_and_users.html" data-id="password_and_users">Password and users</a></span><div class=" wh_toc_shortdesc " href="password_and_users.html" data-id="password_and_users">
+            Control Center uses several different passwords for various restricted activities,         and these passwords are maintained
+               in different ways. 
+            
+         </div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="ssl_certificates.html" data-id="ssl_certificates">SSL certificates</a></span><div class=" wh_toc_shortdesc " href="ssl_certificates.html" data-id="ssl_certificates">
+            All internal communication among various software components of the Control Center         platform is conducted using SSL
+               encryption.
+            
+         </div></div></div></div>
+                
+            </div>
+        </div>
+        
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        
+    </body>
+</html>

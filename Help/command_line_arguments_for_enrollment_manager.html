@@ -1,0 +1,496 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="reference" /><meta name="description" content="Command Purpose Full Command String -enroll Enroll entities from an LDAP directory server or a source file enrollmgr -enroll -t &lt;type&gt; -n &lt;domain_name&gt; -s &lt;server&gt; -p &lt;port&gt; -u &lt;username&gt; {-w ..." /><meta name="indexterms" content="Enrollment Manager, summary of CLI command arguments, command line arguments, Enrollment Manager, verbose option (Enrollment Manager), case sensitivity, of Enrollment Mgr commands, enrollment_name parameter" /><meta name="DC.subject" content="Enrollment Manager, summary of CLI command arguments, command line arguments, Enrollment Manager, verbose option (Enrollment Manager), case sensitivity, of Enrollment Mgr commands, enrollment_name parameter" /><meta name="keywords" content="Enrollment Manager, summary of CLI command arguments, command line arguments, Enrollment Manager, verbose option (Enrollment Manager), case sensitivity, of Enrollment Mgr commands, enrollment_name parameter" /><meta name="DC.Relation" scheme="URI" content="using_the_enrollment_manager.html" /><meta name="DC.Relation" scheme="URI" content="connection_during_an_enrollment.html" /><meta name="DC.Relation" scheme="URI" content="using_the_enrollment_manager.html" /><meta name="DC.Relation" scheme="URI" content="configuration_files_for_domain_groups.html" /><meta name="DC.Relation" scheme="URI" content="about_connection_files.html" /><meta name="DC.Relation" scheme="URI" content="definition_files.html" /><meta name="DC.Relation" scheme="URI" content="filter_files.html" /><meta name="DC.Relation" scheme="URI" content="incremental_synchronization_using_ldif_delta_file.html" /><meta name="DC.Relation" scheme="URI" content="how_to_enroll_from_a_directory__single_domain.html" /><meta name="DC.Relation" scheme="URI" content="enrolling_from_an_ldif_file_for_a_single_domain.html" /><meta name="DC.Relation" scheme="URI" content="updating_directory_enrollments_for_a_single_domain.html" /><meta name="DC.Relation" scheme="URI" content="updating_ldif_file_enrollments_for_a_single_domain.html" /><meta name="DC.Relation" scheme="URI" content="updating_domain_group_enrollments.html" /><meta name="DC.Relation" scheme="URI" content="manual_synchronization.html" /><meta name="DC.Relation" scheme="URI" content="incremental_synchronization_using_ldif_delta_file.html" /><meta name="DC.Relation" scheme="URI" content="enrolling_sharepoint_users_and_groups.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="command_line_arguments_for_enrollment_manager" />        
+      <title>Command line arguments for Enrollment Manager</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="command_line_arguments_for_enrollment_manager-d66e659" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="command_line_arguments_for_enrollment_manager" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains enrollment and provides instructions for enrolling users,         groups, and host groups from LDAP,
+                  and         users and user groups from Azure Active Directory (Azure AD).
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="about_the_enrollment_manager_utility"><span class="title"><a href="about_the_enrollment_manager_utility.html">About the Enrollment Manager utility</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Enrollment Manager utility enrolls entities into the Network Information         Directory, directly from an LDAP directory,
+                  an LDIF file, or         Azure         AD.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="using_the_enrollment_manager"><span class="title"><a href="using_the_enrollment_manager.html">Using the Enrollment Manager</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Enrollment Manager is automatically installed on the Control Center         host.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="command_line_arguments_for_enrollment_manager"><span class="title"><a href="command_line_arguments_for_enrollment_manager.html">Command line arguments for Enrollment Manager</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" class="topicref" data-id="enrolling_users_hosts__and_groups" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action enrolling_users_hosts__and_groups-d66e375-link" class="wh-expand-btn"></span><span class="title"><a href="enrolling_users_hosts__and_groups.html" id="enrolling_users_hosts__and_groups-d66e375-link">Enrolling users, hosts, and groups</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains enrollment and provides instructions for enrolling users,         groups, and host groups from LDAP,
+                  and         users and user groups from Azure Active Directory (Azure AD).
+                  
+               </p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="about_enrollment-d66e389" class="topicref" data-id="about_enrollment" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_enrollment-d66e389-link" class="wh-expand-btn"></span><span class="title"><a href="about_enrollment.html" id="about_enrollment-d66e389-link">About enrollment</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Enrollment is is the process of importing LDAP directory entities, SharePoint user         groups, hosts, and other entities
+                        into the Control Center         database.         For Azure AD, only users and groups can be imported into the Control Center
+                        database.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="entities_that_can_be_enrolled-d66e414" class="topicref" data-id="entities_that_can_be_enrolled" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action entities_that_can_be_enrolled-d66e414-link" class="wh-expand-btn"></span><span class="title"><a href="entities_that_can_be_enrolled.html" id="entities_that_can_be_enrolled-d66e414-link">Entities that can be enrolled</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Control Center enrollment utilities import information about the underlying         information network, including the
+                        entities described in this section.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="about_domain_group_enrollment-d66e458" class="topicref" data-id="about_domain_group_enrollment" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_domain_group_enrollment-d66e458-link" class="wh-expand-btn"></span><span class="title"><a href="about_domain_group_enrollment.html" id="about_domain_group_enrollment-d66e458-link">About Domain Group enrollment</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A Domain Group contains multiple User, Host, and Group sources, referred to as         subdomains, that can be managed together
+                        in a single enrollment process.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="overview_of_enrollment_types_and_procedures-d66e480" class="topicref" data-id="overview_of_enrollment_types_and_procedures" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="overview_of_enrollment_types_and_procedures.html" id="overview_of_enrollment_types_and_procedures-d66e480-link">Overview of enrollment types and procedures</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Different types of enrollments require different arguments and use different         auxiliary files.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="about_the_enrollment_manager_utility-d66e491" class="topicref" data-id="about_the_enrollment_manager_utility" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action about_the_enrollment_manager_utility-d66e491-link" class="wh-expand-btn"></span><span class="title"><a href="about_the_enrollment_manager_utility.html" id="about_the_enrollment_manager_utility-d66e491-link">About the Enrollment Manager utility</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Enrollment Manager utility enrolls entities into the Network Information         Directory, directly from an LDAP directory,
+                        an LDIF file, or         Azure         AD.
+                        
+                     </p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="how_enrollment_connections_are_established-d66e505" class="topicref" data-id="how_enrollment_connections_are_established" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action how_enrollment_connections_are_established-d66e505-link" class="wh-expand-btn"></span><span class="title"><a href="how_enrollment_connections_are_established.html" id="how_enrollment_connections_are_established-d66e505-link">How enrollment connections are established</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Enrollment Manager utility can be installed on any host in the network, as long         as the utility can connect to
+                              the server where Control Center is running. 
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="before_you_enroll-d66e615" class="topicref" data-id="before_you_enroll" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action before_you_enroll-d66e615-link" class="wh-expand-btn"></span><span class="title"><a href="before_you_enroll.html" id="before_you_enroll-d66e615-link">Before you enroll</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Before enrolling LDAP data, you must run the Control Center installation wizard, and         then start Control Center.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="true"><span data-tocid="using_the_enrollment_manager-d66e648" class="topicref" data-id="using_the_enrollment_manager" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action using_the_enrollment_manager-d66e648-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_enrollment_manager.html" id="using_the_enrollment_manager-d66e648-link">Using the Enrollment Manager</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Enrollment Manager is automatically installed on the Control Center         host.</p>
+                           </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="command_line_arguments_for_enrollment_manager-d66e659" class="topicref" data-id="command_line_arguments_for_enrollment_manager" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="command_line_arguments_for_enrollment_manager.html" id="command_line_arguments_for_enrollment_manager-d66e659-link">Command line arguments for Enrollment Manager</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="about_enrollment_input_files-d66e672" class="topicref" data-id="about_enrollment_input_files" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_enrollment_input_files-d66e672-link" class="wh-expand-btn"></span><span class="title"><a href="about_enrollment_input_files.html" id="about_enrollment_input_files-d66e672-link">About enrollment input files</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The command lines for enrolling and updating users, hosts and groups have several         filename parameters, which refer
+                        to the following kinds of auxiliary input         files.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="enrolling_users_and_hosts-d66e846" class="topicref" data-id="enrolling_users_and_hosts" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action enrolling_users_and_hosts-d66e846-link" class="wh-expand-btn"></span><span class="title"><a href="enrolling_users_and_hosts.html" id="enrolling_users_and_hosts-d66e846-link">Enrolling users and hosts</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section includes procedures related to configuration options and for performing         enrollments:</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="how_to_maintain_enrollments-d66e926" class="topicref" data-id="how_to_maintain_enrollments" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action how_to_maintain_enrollments-d66e926-link" class="wh-expand-btn"></span><span class="title"><a href="how_to_maintain_enrollments.html" id="how_to_maintain_enrollments-d66e926-link">How to maintain enrollments</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Once you have enrolled users, groups and hosts into your system, you need to keep the         information about them up to
+                        date.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="managing_enrollment_tasks-d66e1064" class="topicref" data-id="managing_enrollment_tasks" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action managing_enrollment_tasks-d66e1064-link" class="wh-expand-btn"></span><span class="title"><a href="managing_enrollment_tasks.html" id="managing_enrollment_tasks-d66e1064-link">Managing enrollment tasks</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use Enrollment Manager commands to perform managerial         tasks.</p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Command
+        line arguments for Enrollment Manager</h1>
+    
+    
+    <div class="body refbody"><p class="shortdesc"></p><section class="section">
+            <table class="table scale-80" id="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb"><caption></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry" id="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1">
+                                <p class="p">Command</p>
+                            </th>
+                            <th class="entry" id="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2">
+                                <p class="p">Purpose</p>
+                            </th>
+                            <th class="entry" id="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3">Full Command String</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1 " rowspan="2"><span class="keyword cmdname">-enroll</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Enroll entities from an LDAP directory server or a
+                                source file</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -enroll -t &lt;type&gt; -n &lt;domain_name&gt; -s
+                                    &lt;server&gt; -p &lt;port&gt; -u &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                    &lt;encryptpwd&gt;} -a &lt;ad_connection_file&gt; -d
+                                    &lt;definitionfile&gt; [-f &lt;filterfile&gt;]</span></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Enroll
+                                entities from Azure AD</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -enroll -t AAD -n &lt;domain_name&gt; -s
+                                    localhost -p &lt;port&gt; -u &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                    &lt;encryptpwd&gt;} -a &lt;Azure_AD_connection_file&gt; -d
+                                    &lt;Azure_AD_definitionfile&gt;</span><p class="p">Not all arguments are
+                                    required for all enrollment types.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1 "><span class="keyword cmdname">-update</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Update an existing enrollment from an LDAP
+                                directory or a source file</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -update -t &lt;type&gt; -n &lt;domain_name&gt; -s
+                                    &lt;server&gt; -p &lt;port&gt; -u &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                    &lt;encryptpwd&gt;} -a &lt;ad_connection_file&gt; -d
+                                    &lt;definitionfile&gt; [-f &lt;filterfile&gt;]</span><p class="p">Not all
+                                    arguments are required for all enrollment types.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1 " rowspan="2"><span class="keyword cmdname">-sync</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Synchronize an enrollment</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -sync -n &lt;domain_name&gt; -s &lt;server&gt; -p
+                                    &lt;port&gt; -u &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                    &lt;encryptpwd&gt;}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Synchronize
+                                an enrollment for Azure AD</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -sync -n &lt;domain&gt; -u &lt;username&gt; {-w
+                                    &lt;passwd&gt;|-ew &lt;encryptpwd&gt;}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1 "><span class="keyword cmdname">-delete</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Delete an enrollment</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -delete -n &lt;domain_name&gt; -s &lt;server&gt; -p
+                                    &lt;port&gt; -u &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                    &lt;encryptpwd&gt;}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1 " rowspan="2"><span class="keyword cmdname">-list</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">List enrollments</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -list -s &lt;server&gt; -p &lt;port&gt; -u
+                                    &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                &lt;encryptpwd&gt;}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">List
+                                enrollments for Azure AD</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -list -s &lt;server&gt; -p &lt;port&gt; -u
+                                    &lt;username&gt; {-w &lt;passwd&gt;|-ew
+                                &lt;encryptpwd&gt;}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__1 "><span class="keyword cmdname">-h</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__2 ">Display a help screen showing definitions of all
+                                valid command line arguments</td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__table_prn_h1b_yfb__entry__3 "><span class="keyword cmdname">enrollmgr -h</span></td>
+                        </tr>
+                    </tbody></table>
+            <p class="p">The following table provides an overview of different arguments that can be supplied
+                to establish connections and to reference the location of input files, including
+                connection, definition, filter, and configuration files.</p>
+            <table class="table scale-80"><caption></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:66.66666666666666%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry" id="command_line_arguments_for_enrollment_manager__entry__28">Argument</th>
+                            <th class="entry" id="command_line_arguments_for_enrollment_manager__entry__29">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 "><span class="keyword cmdname">-t</span></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">Used with the <span class="keyword cmdname">-enroll</span> and
+                                    <span class="keyword cmdname">-update</span> commands to specify the type of
+                                enrollment. Valid values are:<ul class="ul" id="command_line_arguments_for_enrollment_manager__ul_m3g_k13_fhb">
+                                    <li class="li"><code class="ph codeph">DIR</code>: enrolling from an LDAP server</li>
+                                    <li class="li"><code class="ph codeph">PORTAL</code>: enrolling SharePoint group
+                                        definitions</li>
+                                    <li class="li"><code class="ph codeph">LDIF</code>: enrolling from an LDIF file</li>
+                                    <li class="li"><code class="ph codeph">DOMAINGROUP</code>: enrolling multiple subdomains
+                                        in a single enrollment (which can include DIR, PORTAL, and
+                                        LDIF type enrollments)</li>
+                                    <li class="li"><code class="ph codeph">AAD</code>:
+                                        enrolling from Azure AD</li>
+                                </ul><p class="p" id="command_line_arguments_for_enrollment_manager__ad1298026">These values are case sensitive, and must be
+                                    capitalized as shown.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 "><span class="keyword cmdname">-n</span>
+                                <var class="keyword varname">&lt;domain_name&gt;</var> or
+                                    <var class="keyword varname">&lt;enrollment_name&gt;</var></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">The name of the enrollment. Each enrollment needs
+                                a unique name, so it can be identified in various management
+                                functions, such as confirming, synchronizing, and updating. For User
+                                and Host enrollments, this value must be the name of the domain from
+                                which entities are being enrolling. Accordingly, domains can only be
+                                enrolled once. After a domain is enrolled, it can be updated using
+                                the same name to incorporate any changes.<p class="p">SharePoint or
+                                    application enrollments do not need to use the domain name; they
+                                    can use any name. This makes it possible to perform multiple
+                                    enrollments from the same SharePoint server, as long as the
+                                    names are unique.</p><p class="p">A Domain Group also receives its own
+                                    domain name, as does each subdomain in the Domain Group.
+                                    Subdomain enrollment names are defined in the Configuration
+                                    file.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 "><span class="keyword cmdname">-g</span>
+                                <var class="keyword varname">&lt;domaingroup file&gt;</var></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">The location of the Domain Group configuration
+                                file.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 "><span class="keyword cmdname">-s</span><var class="keyword varname">
+                                    &lt;server&gt;</var></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">The name or URL of the host where Control Center
+                                is running. For distributed Control Center installations, where
+                                Enrollment Manager is installed on a different host, this server
+                                should be the host where the Enrollment Manager is installed. If
+                                this argument is not present, the default value localhost is
+                                used.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 "><span class="keyword cmdname">-p</span>
+                                <var class="keyword varname">&lt;port&gt;</var></td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">The port of the Control Center host, which is 8443
+                                unless it was explicitly changed. This argument is optional; if it
+                                is not present, the default value 8443 is used.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-u</span>
+                                    <var class="keyword varname">&lt;username&gt;</var></p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">The username of a Control Center user with
+                                administrator privileges. NextLabs recommends using a placeholder
+                                username, dedicated only to enrollment functions, rather than using
+                                a live account. This prevents problems that can arise when a live
+                                user changes a username or password.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-w</span><var class="keyword varname"> &lt;passwd&gt;</var>
+                                </p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                <p class="p">Password for the Control Center administrative user specified by
+                                        <span class="keyword cmdname">-u</span>. NextLabs recommends using a
+                                    placeholder password, dedicated only to enrollment functions,
+                                    rather than using a live account.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-ew</span><var class="keyword varname"> &lt;encryptpwd&gt;</var>
+                                </p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                
+                                <p class="p">Encrypted password for the Control Center administrative user
+                                    specified by <span class="keyword cmdname">-u</span>. You can generate an
+                                    encrypted password using the <span class="ph filepath">mkpassword.bat</span>
+                                    utility. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-a</span>
+                                    <var class="keyword varname">&lt;connection_file&gt;</var></p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                <p class="p">The name of the directory connection file, which is required for
+                                    enrolling or updating with an LDAP server and for enrolling
+                                    portal sites. To create a connection file, copy one of several
+                                    provided template or default files that matches the kind of
+                                    entity being enrolled. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-d</span>
+                                    <var class="keyword varname">&lt;definitionfile&gt;</var></p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                <p class="p">The name of the definition file, which is required for all
+                                    enrollments and updates. To create a definition file, copy one
+                                    of several provided template or default files that matches the
+                                    kind of entity being enrolled. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-f </span><var class="keyword varname">&lt;filterfile&gt;</var></p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                <p class="p">(Optional) The name of the LDAP filter file.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-v</span>
+                                </p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                <p class="p" id="command_line_arguments_for_enrollment_manager__ad1298094">Verbose option; may be used with any command. When
+                                    this is used and an error occurs, a detailed description of the
+                                    issue appears in the command window. If this option is not used,
+                                    a shorter summary is displayed.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__28 ">
+                                <p class="p"><span class="keyword cmdname">-delta</span></p>
+                            </td>
+                            <td class="entry" headers="command_line_arguments_for_enrollment_manager__entry__29 ">
+                                <p class="p">(Optional) Make changes to an existing enrollment after
+                                    performing manual synchronization. </p>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </section></div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="connection_during_an_enrollment.html" title="The connection process is as follows.">Connection during an enrollment</a></div><div class="related_link"><a class="navheader_parent_path" href="using_the_enrollment_manager.html" title="The Enrollment Manager is automatically installed on the Control Center host.">Using the Enrollment Manager</a></div><div class="related_link"><a class="navheader_parent_path" href="configuration_files_for_domain_groups.html" title="Domain Group enrollment requires an additional input file: the Configuration file.">Configuration files for Domain Groups</a></div><div class="related_link"><a class="navheader_parent_path" href="about_connection_files.html" title="Connection files, as the name implies, contain the information Control Center needs to locate and connect to an information source: either to the LDAP directory tree from which information is to be enrolled, or to the SharePoint server whose groups you want to enroll.">About connection files</a></div><div class="related_link"><a class="navheader_parent_path" href="definition_files.html" title="Definition files contain all the information required to map the data being enrolled from the information source to the format Control Center uses in its Information Network Directory tables.">Definition files</a></div><div class="related_link"><a class="navheader_parent_path" href="filter_files.html" title="Filter files enable you to selectively import leaf element—users, contacts, hosts, applications, and groups—from a directory server.">Filter files</a></div></div><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="incremental_synchronization_using_ldif_delta_file.html" title="If you want make changes to an existing enrollment after performing manual synchronization, you can use the Enrollment Manager utility with the -delta option to perform incremental synchronization.">Incremental synchronization using LDIF delta file</a></div><div class="related_link"><a class="navheader_parent_path" href="how_to_enroll_from_a_directory__single_domain.html" title="This section explains how to enroll from a single domain.">How to enroll from a directory (single domain)</a></div><div class="related_link"><a class="navheader_parent_path" href="enrolling_from_an_ldif_file_for_a_single_domain.html" title="Use a different template for the definition file, called app.sample.default.def to enroll.">Enrolling from an LDIF file for a single domain</a></div><div class="related_link"><a class="navheader_parent_path" href="updating_directory_enrollments_for_a_single_domain.html" title="You should use the -update command whenever you want to enroll different types of entities or a changed data structure from a domain you have already enrolled.">Updating directory enrollments for a single domain</a></div><div class="related_link"><a class="navheader_parent_path" href="updating_ldif_file_enrollments_for_a_single_domain.html" title="You can use the -update command to update user and host information in the Control Center Information Network Directory, based on the content of an LDIF file.">Updating LDIF file enrollments for a single domain</a></div><div class="related_link"><a class="navheader_parent_path" href="updating_domain_group_enrollments.html" title="If you make changes to any of the input files for the subdomains for an existing Domain Group enrollment, or add or delete subdomains for an enrolled Domain Group, you need to update the enrollment.">Updating Domain Group enrollments</a></div><div class="related_link"><a class="navheader_parent_path" href="manual_synchronization.html" title="The -sync command reuses the parameters provided the last time the enroll command was called for the specified enrollments—including the references to the appropriate definition and connection files—based on the enrollment name parameter (-n).">Manual synchronization</a></div><div class="related_link"><a class="navheader_parent_path" href="enrolling_sharepoint_users_and_groups.html" title="Enrolling SharePoint groups is similar to the procedure for enrolling users and groups.">Enrolling SharePoint users and groups</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="connection_during_an_enrollment.html" title="The connection process is as follows.">Connection during an enrollment</a></div><div class="related_link"><a class="navheader_parent_path" href="using_the_enrollment_manager.html" title="The Enrollment Manager is automatically installed on the Control Center host.">Using the Enrollment Manager</a></div><div class="related_link"><a class="navheader_parent_path" href="configuration_files_for_domain_groups.html" title="Domain Group enrollment requires an additional input file: the Configuration file.">Configuration files for Domain Groups</a></div><div class="related_link"><a class="navheader_parent_path" href="about_connection_files.html" title="Connection files, as the name implies, contain the information Control Center needs to locate and connect to an information source: either to the LDAP directory tree from which information is to be enrolled, or to the SharePoint server whose groups you want to enroll.">About connection files</a></div><div class="related_link"><a class="navheader_parent_path" href="definition_files.html" title="Definition files contain all the information required to map the data being enrolled from the information source to the format Control Center uses in its Information Network Directory tables.">Definition files</a></div><div class="related_link"><a class="navheader_parent_path" href="filter_files.html" title="Filter files enable you to selectively import leaf element—users, contacts, hosts, applications, and groups—from a directory server.">Filter files</a></div></div><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="incremental_synchronization_using_ldif_delta_file.html" title="If you want make changes to an existing enrollment after performing manual synchronization, you can use the Enrollment Manager utility with the -delta option to perform incremental synchronization.">Incremental synchronization using LDIF delta file</a></div><div class="related_link"><a class="navheader_parent_path" href="how_to_enroll_from_a_directory__single_domain.html" title="This section explains how to enroll from a single domain.">How to enroll from a directory (single domain)</a></div><div class="related_link"><a class="navheader_parent_path" href="enrolling_from_an_ldif_file_for_a_single_domain.html" title="Use a different template for the definition file, called app.sample.default.def to enroll.">Enrolling from an LDIF file for a single domain</a></div><div class="related_link"><a class="navheader_parent_path" href="updating_directory_enrollments_for_a_single_domain.html" title="You should use the -update command whenever you want to enroll different types of entities or a changed data structure from a domain you have already enrolled.">Updating directory enrollments for a single domain</a></div><div class="related_link"><a class="navheader_parent_path" href="updating_ldif_file_enrollments_for_a_single_domain.html" title="You can use the -update command to update user and host information in the Control Center Information Network Directory, based on the content of an LDIF file.">Updating LDIF file enrollments for a single domain</a></div><div class="related_link"><a class="navheader_parent_path" href="updating_domain_group_enrollments.html" title="If you make changes to any of the input files for the subdomains for an existing Domain Group enrollment, or add or delete subdomains for an enrolled Domain Group, you need to update the enrollment.">Updating Domain Group enrollments</a></div><div class="related_link"><a class="navheader_parent_path" href="manual_synchronization.html" title="The -sync command reuses the parameters provided the last time the enroll command was called for the specified enrollments—including the references to the appropriate definition and connection files—based on the enrollment name parameter (-n).">Manual synchronization</a></div><div class="related_link"><a class="navheader_parent_path" href="enrolling_sharepoint_users_and_groups.html" title="Enrolling SharePoint groups is similar to the procedure for enrolling users and groups.">Enrolling SharePoint users and groups</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

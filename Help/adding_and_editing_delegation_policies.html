@@ -1,0 +1,618 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="description" content="Creating and editing delegation policies is similar to creating and editing the policies that govern access to resources." /><meta name="DC.Relation" scheme="URI" content="manage_access_to_the_console.html" /><meta name="DC.Relation" scheme="URI" content="about_managing_user_accounts.html" /><meta name="DC.Relation" scheme="URI" content="about_reporter.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="adding_and_editing_delegation_policies" />        
+      <title>Adding and editing delegation policies</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="adding_and_editing_delegation_policies-d66e159" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="adding_and_editing_delegation_policies" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to manage user access to Control Center interface elements         through delegation policies,
+                  which control access using attributes.
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="adding_and_editing_delegation_policies"><span class="title"><a href="adding_and_editing_delegation_policies.html">Adding and editing delegation policies</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Creating and editing delegation policies is similar to creating and editing the         policies that govern access to resources.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="manage_access_to_the_console-d66e140" class="topicref" data-id="manage_access_to_the_console" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action manage_access_to_the_console-d66e140-link" class="wh-expand-btn"></span><span class="title"><a href="manage_access_to_the_console.html" id="manage_access_to_the_console-d66e140-link">Manage access to the console</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to manage user access to Control Center interface elements         through delegation policies,
+                  which control access using attributes.
+                  
+               </p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_delegation_policies-d66e151" class="topicref" data-id="about_delegation_policies" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_delegation_policies.html" id="about_delegation_policies-d66e151-link">About delegation policies</a></span></span></li>
+         <li role="treeitem" class="active"><span data-tocid="adding_and_editing_delegation_policies-d66e159" class="topicref" data-id="adding_and_editing_delegation_policies" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="adding_and_editing_delegation_policies.html" id="adding_and_editing_delegation_policies-d66e159-link">Adding and editing delegation policies</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Creating and editing delegation policies is similar to creating and editing the         policies that govern access to resources.</p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="deleting_delegation_policies-d66e170" class="topicref" data-id="deleting_delegation_policies" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="deleting_delegation_policies.html" id="deleting_delegation_policies-d66e170-link">Deleting delegation policies</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Deleting delegation policies removes them from the Control Center system.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="about_managing_user_accounts-d66e181" class="topicref" data-id="about_managing_user_accounts" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_managing_user_accounts-d66e181-link" class="wh-expand-btn"></span><span class="title"><a href="about_managing_user_accounts.html" id="about_managing_user_accounts-d66e181-link">About managing user accounts</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Control Center user accounts enable users to log in to the Control Center web console         using a specified username and
+                        password.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="about_importing_user_information_from_ad_sources-d66e296" class="topicref" data-id="about_importing_user_information_from_ad_sources" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_importing_user_information_from_ad_sources-d66e296-link" class="wh-expand-btn"></span><span class="title"><a href="about_importing_user_information_from_ad_sources.html" id="about_importing_user_information_from_ad_sources-d66e296-link">About importing user information from AD sources</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">You can connect the Control Center console to an Active Directory (AD) server to         import user information.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="about_importing_user_information_from_ad_sources-d66e329" class="topicref" data-id="about_importing_user_information_from_ad_sources" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_importing_user_information_from_ad_sources-d66e329-link" class="wh-expand-btn"></span><span class="title"><a href="about_importing_user_information_from_azure_ad.html" id="about_importing_user_information_from_ad_sources-d66e329-link">About importing user information from Azure AD</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">You can connect the Control Center console to Azure AD to import user and group         information. </p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="changing_the_superuser_password-d66e362" class="topicref" data-id="changing_the_superuser_password" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="changing_the_superuser_password.html" id="changing_the_superuser_password-d66e362-link">Changing the superuser password</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The superuser Administrator account cannot be deleted or renamed. However, anyone         logged in to the Control Center
+                        interface with the superuser account can change the         superuser password as described in this section.
+                        
+                     </p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Adding and editing delegation policies</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">Creating and editing delegation policies is similar to creating and editing the
+        policies that govern access to resources.</p>
+        <section class="section context" id="adding_and_editing_delegation_policies__context_az1_3rf_1fb">Administrators specify the required attributes,
+            conditions, tags, and obligations for each delegation policy. Once created, delegation
+            policies are used to determine console access for users who have Control Center user
+                accounts.<ul class="ul" id="adding_and_editing_delegation_policies__ul_lbn_nn4_1fb">
+                <li class="li">Decide what kind of policy you want to create, and whether to base the policy on
+                    user attributes such as locations or usernames.</li>
+                <li class="li">Know the attributes or usernames you want to use in the policy.</li>
+                <li class="li">Know the relevant tags applied to policy components.</li>
+            </ul></section>
+        <ol class="ol steps" id="adding_and_editing_delegation_policies__steps_bbd_pn4_1fb"><li class="li step stepexpand">
+                <span class="ph cmd">Log in to the Control Center web console with an account that has permission to
+                    manage delegation policies, such as the superuser Administrator account.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">On the left navigation bar, select <span class="ph menucascade"><span class="ph uicontrol">Administration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Delegation Policies</span></span>.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Do one of the following:</span>
+                <ul class="ul choices" id="adding_and_editing_delegation_policies__choices_jy5_tn4_1fb">
+                    <li class="li choice">Click <span class="ph uicontrol">Add Delegation Policy</span> in the upper
+                        right.</li>
+                    <li class="li choice">Click the name of an existing policy.</li>
+                </ul>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Add or edit the policy properties described in the following table.</span>
+                <div class="itemgroup info">
+                    <table class="table frame-all" id="adding_and_editing_delegation_policies__table_ohq_fbb_1gb"><caption><span class="table--title-label">Table 1. </span><span class="title">Delegation policy properties</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                                <tr>
+                                    <th class="entry colsep-1 rowsep-1" id="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1">Option</th>
+                                    <th class="entry colsep-1 rowsep-1" id="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2">Description</th>
+                                </tr>
+                            </thead><tbody class="tbody">
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">BASIC INFORMATION</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">The name and description of the policy. The name appears
+                                        on the Delegation Policies list.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Name</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">The display name of the item. Names cannot be longer than
+                                        255
+                                        characters, and cannot include the reserved characters $, /,
+                                        ?, \, &amp;, or *. Names can include multibyte characters,
+                                        such as those used by Asian languages.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Description</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">A description of the item. This field is useful for
+                                        explaining how the item is used and for documenting changes
+                                        to the item. Descriptions can include multibyte characters,
+                                        such as those used by Asian languages.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">EFFECT &amp; CONDITIONS</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">The policy actions and attributes that identify
+                                        users.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Allow or Deny</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">The action taken when conditions in the policy are
+                                            met.<ul class="ul" id="adding_and_editing_delegation_policies__ul_rp5_yq4_1fb">
+                                            <li class="li">Allow: Permit the listed Subjects to perform the
+                                                task specified in the policy. Allowing a set of
+                                                Subjects to perform a task does not mean that others
+                                                are blocked from performing that action. Allow
+                                                policies can never result in Deny responses. Allow
+                                                policies can only result in Allow or Not Applicable
+                                                responses.</li>
+                                            <li class="li">Deny: Do not permit the listed Subjects to perform
+                                                the task specified in the policy, but allow all
+                                                others to do so. Deny policies can result in Deny,
+                                                Allow, or Not Applicable responses.</li>
+                                        </ul></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Conditions</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">User attributes used in the policy definition. User
+                                        attributes include location, AD (Active Directory) Group,
+                                        and Department. Select the appropriate operator (is, to
+                                        include users that have the specified attribute, or is not
+                                        to exclude users with the specified attribute). Then specify
+                                        the attribute definition, such as USA for the Location
+                                        attribute. Click <span class="ph uicontrol">Add condition</span> to add
+                                        an attribute.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">MODULES</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">
+                                        <p class="p">The Control Center interfaces where users perform tasks.
+                                            Use tags and conditional settings to further refine
+                                            access to tasks. If no tags or conditions are specified,
+                                            users are able to access all items.</p>
+                                        <p class="p">When you select an action check box, all required and
+                                            optional action check boxes are automatically selected
+                                            across modules. The following table lists the actions
+                                            and the corresponding required and optional actions. You
+                                            can review each module and choose to clear any action
+                                            check box that is optional.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Policy</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">Controls access to policy-management tasks such as:<ul class="ul" id="adding_and_editing_delegation_policies__ul_c2m_fs4_1fb">
+                                            <li class="li">Create Policy: Set up new policies.</li>
+                                            <li class="li">Deploy Policy: Make policies available to policy
+                                                enforcers in the system.</li>
+                                            <li class="li">Delete Policy: Deactivate policies.</li>
+                                            <li class="li">View Policy: View the properties of existing
+                                                policies.</li>
+                                            <li class="li">Edit Policy: Change the properties of existing
+                                                policies.</li>
+                                        </ul></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Component</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">Controls access to policy-component-related tasks, such
+                                            as:<ul class="ul" id="adding_and_editing_delegation_policies__ul_ed2_4s4_1fb">
+                                            <li class="li">Create Component: Set up new policy components.</li>
+                                            <li class="li">
+                                                <p class="p">Deploy Component: Make policy components
+                                                  available for use in policies.</p>
+                                            </li>
+                                            <li class="li">
+                                                <p class="p">View Component: View the properties of existing
+                                                  policy components.</p>
+                                            </li>
+                                            <li class="li">Delete Component: Remove policy components from the
+                                                system.</li>
+                                            <li class="li">Edit Component: Change the properties of existing
+                                                policy components.</li>
+                                        </ul><div class="note note note_note"><span class="note__title">Note:</span> 
+                                            
+                                            <p class="p">If an administrator applies a tag-based restriction
+                                                to a user, that user cannot create new components or
+                                                sub-components in the Policies or Component details
+                                                page.</p>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Policy Model</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 ">Controls access to policy-model-related tasks, such as:
+                                            <ul class="ul" id="adding_and_editing_delegation_policies__ul_qhz_ws4_1fb">
+                                            <li class="li">Create Policy Model: Set up new Policy Models.</li>
+                                            <li class="li">Delete Policy Model: Remove Policy Models from the
+                                                system. </li>
+                                            <li class="li">View Policy Model: View the properties of existing
+                                                Policy Models.</li>
+                                            <li class="li">Edit Policy Model: Change the properties of existing
+                                                Policy Models.</li>
+                                        </ul></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__1 ">Others</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_ohq_fbb_1gb__entry__2 "><ul class="ul" id="adding_and_editing_delegation_policies__ul_qpv_5bb_1gb">
+                                            <li class="li">Delegated Administration: Manage delegated policies
+                                                and users. Tasks related to managing policies that
+                                                govern user access to Control Center interfaces.
+                                                Users access these tasks by clicking <span class="ph menucascade"><span class="ph uicontrol">Administration</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Delegation Policies</span></span> in the Control Center left navigation
+                                                bar.</li>
+                                            <li class="li">Reports: Report-related tasks performed in the
+                                                Reporter section of the Control Center interface.
+                                                Users with permission to create, delete, view, or
+                                                edit reporter actions access these tasks by clicking
+                                                  <span class="ph uicontrol">Reports</span> in the Control
+                                                Center left navigation bar.</li>
+                                            <li class="li">System Settings: Access to manage system
+                                                settings.</li>
+                                            <li class="li">Tag Management: Access to create policy, policy
+                                                model, and component tags.</li>
+                                            <li class="li">Tools: Access to test policies within the Control
+                                                Center console using Policy Tester.</li>
+                                        </ul>Controls access to administrative tasks, such
+                                        as:</td>
+                                </tr>
+                            </tbody></table>
+                    <table class="table frame-all" id="adding_and_editing_delegation_policies__table_txj_wbb_1gb"><caption><span class="table--title-label">Table 2. </span><span class="title">Required
+                            and optional actions</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead class="thead">
+                                <tr>
+                                    <th class="entry colsep-1 rowsep-1" id="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1">Action</th>
+                                    <th class="entry colsep-1 rowsep-1" id="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2">Required actions</th>
+                                    <th class="entry colsep-1 rowsep-1" id="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3">Optional actions</th>
+                                </tr>
+                            </thead><tbody class="tbody">
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Create Policy</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_kz5_ybb_1gb">
+                                            <li class="li">View Policy</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_srm_bcb_1gb">
+                                            <li class="li">Edit Policy</li>
+                                            <li class="li">Create Policy Tags</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Delete Policy</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_py4_fcb_1gb">
+                                            <li class="li">Deploy Policy</li>
+                                            <li class="li">View Policy</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Deploy Policy</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_djr_hcb_1gb">
+                                            <li class="li">View Policy</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_rtt_3cb_1gb">
+                                            <li class="li">Deploy Component</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Edit Policy</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_opt_jcb_1gb">
+                                            <li class="li">View Policy</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_nsg_kcb_1gb">
+                                            <li class="li">Create Policy Tags</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">View Policy</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Create Component</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_lhh_ncb_1gb">
+                                            <li class="li">View Component</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_jqv_ncb_1gb">
+                                            <li class="li">Edit Component</li>
+                                            <li class="li">Create Component Tags</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Delete Component</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_gjl_pcb_1gb">
+                                            <li class="li">Deploy Policy</li>
+                                            <li class="li">View Component</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_ykc_qcb_1gb">
+                                            <li class="li">Edit Policy</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Deploy Component</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_f32_rcb_1gb">
+                                            <li class="li">View Component</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Edit Component</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_wp3_scb_1gb">
+                                            <li class="li">View Component</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_pds_scb_1gb">
+                                            <li class="li">Create Component Tags</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">View Component</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Create Policy Model</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_wx4_5cb_1gb">
+                                            <li class="li">View Policy Model</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_gzf_vcb_1gb">
+                                            <li class="li">Edit Policy Model</li>
+                                            <li class="li">Create Policy Model Tags</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Delete Policy Model</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_fxb_vgj_jgb">
+                                            <li class="li">View Policy Model</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Edit Policy Model</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_jhq_xcb_1gb">
+                                            <li class="li">View Policy Model</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_xm1_ycb_1gb">
+                                            <li class="li">Create Policy Model Tags</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">View Policy Model</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Manage Delegation Policies</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Manage Users</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Manage Reports</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_dyv_cdb_1gb">
+                                            <li class="li">View Reports</li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">View Reports</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Manage System Settings</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Create Component Tags</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_lfl_fdb_1gb">
+                                            <li class="li">View Component</li>
+                                            <li class="li">At least one of the following actions:<ul class="ul" id="adding_and_editing_delegation_policies__ul_k1m_gdb_1gb">
+                                                  <li class="li">Create Component</li>
+                                                  <li class="li">Edit Component</li>
+                                                  <li class="li">Manage Delegation Policies</li>
+                                                </ul></li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Create Policy Model Tags</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_hzw_3db_1gb">
+                                            <li class="li">View Policy Model</li>
+                                            <li class="li">At least one of the following actions:<ul class="ul" id="adding_and_editing_delegation_policies__ul_l2q_jdb_1gb">
+                                                  <li class="li">Create Policy Model</li>
+                                                  <li class="li">Edit Policy Model</li>
+                                                  <li class="li">Manage Delegation Policies</li>
+                                                </ul></li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Create Policy Tags</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_jlh_ldb_1gb">
+                                            <li class="li">View Policy</li>
+                                            <li class="li">At least one of the following actions:<ul class="ul" id="adding_and_editing_delegation_policies__ul_thl_mdb_1gb">
+                                                  <li class="li">Create Policy</li>
+                                                  <li class="li">Edit Policy</li>
+                                                  <li class="li">Manage Delegation Policies</li>
+                                                </ul></li>
+                                        </ul>
+                                    </td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__1 ">Policy Tester</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__2 ">Not applicable</td>
+                                    <td class="entry colsep-1 rowsep-1" headers="adding_and_editing_delegation_policies__table_txj_wbb_1gb__entry__3 ">
+                                        <ul class="ul" id="adding_and_editing_delegation_policies__ul_vfl_3hj_jgb">
+                                            <li class="li">View Policy</li>
+                                            <li class="li">View Component</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">Save</span>. <span class="ph">The policy is used to determine console
+                        access for users who have Control Center user accounts.</span></span>
+            </li></ol><section class="section postreq"><p class="p">Add accounts for the Control Center users to be governed by the policy.</p></section></div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="about_managing_user_accounts.html" title="Control Center user accounts enable users to log in to the Control Center web console using a specified username and password.">About managing user accounts</a></div><div class="related_link"><a class="navheader_parent_path" href="about_reporter.html" title="Reporter is a web-based interface that is installed as a component of the console.">About Reporter</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="about_managing_user_accounts.html" title="Control Center user accounts enable users to log in to the Control Center web console using a specified username and password.">About managing user accounts</a></div><div class="related_link"><a class="navheader_parent_path" href="about_reporter.html" title="Reporter is a web-based interface that is installed as a component of the console.">About Reporter</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

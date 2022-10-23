@@ -1,0 +1,237 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="description" content="Custom obligations are those that are not automatically provided in the Control Center interface, but require some special configuration, referred to as registration." /><meta name="indexterms" content="DisplayName, config file element, RunAt, config file element, RunBy, config file element" /><meta name="DC.subject" content="DisplayName, config file element, RunAt, RunBy" /><meta name="keywords" content="DisplayName, config file element, RunAt, RunBy" /><meta name="DC.Relation" scheme="URI" content="configuration_settings.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="registering_custom_obligations" />        
+      <title>Registering custom obligations</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="registering_custom_obligations" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Registering custom obligations</h1>
+    
+    
+    <div class="body conbody"><p class="shortdesc">Custom obligations are those that are not automatically provided in the Control
+        Center interface, but require some special configuration, referred to as
+        registration.</p>
+        <p class="p">Registering an obligation involves adding an <code class="ph codeph">&lt;Obligation&gt;</code>
+            subsection defining it, within the <code class="ph codeph">&lt;Obligations&gt;</code> section of the
+            config file.</p>
+        <div class="p">There are two kinds of custom obligations, executed and delegated. Both must be
+            registered in the configuration file.  The following table provides descriptions of the
+            elements required for registration.<table class="table" id="registering_custom_obligations__af1260056"><caption><span class="table--title-label">Table 1. </span><span class="title">Defining custom obligations in <span class="ph">configuration.xml</span></span></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry" id="registering_custom_obligations__af1260056__entry__1">Section</th>
+                            <th class="entry" id="registering_custom_obligations__af1260056__entry__2">Element</th>
+                            <th class="entry" id="registering_custom_obligations__af1260056__entry__3">Function</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__1 "><code class="ph codeph">&lt;Obligations&gt;</code></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 "></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Section of the XML file that contains all
+                                registered custom obligations. That is, registering an obligation
+                                means adding an <code class="ph codeph">&lt;Obligation&gt;</code> sub-section
+                                within this section. </td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__1 " rowspan="5"><code class="ph codeph">&lt;Obligation&gt;</code></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 "></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Registers one custom obligation, which behaves as
+                                defined by the elements in this section. The Obligations section may
+                                have any number of Obligation sections within it.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 ">DisplayName</td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">The display name of the item. Names cannot be
+                                longer than
+                                255
+                                characters, and cannot include the reserved characters $, /, ?, \,
+                                &amp;, or *. Names can include multibyte characters, such as those
+                                used by Asian languages.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 ">RunAt</td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">This specifies where the obligation runs, which
+                                also served to distinguish between executed and delegated types.
+                                Valid values: PDP (for executed obligations), PEP (for delegated
+                                obligations)</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 ">RunBy</td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Used by executed obligations only; specifies what
+                                kind of session the obligation requires. Valid values: User (an
+                                authenticated user session), or System (an unauthenticated session).
+                                Used only when RunAt=PDP.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 ">ExecPath</td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Used by executed obligations only; specifies the
+                                path where the executable code has been installed on the enforcer
+                                host.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__1 "><code class="ph codeph">&lt;Arguments&gt;</code></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 "></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Defines all arguments required for this
+                                obligation. Each argument is defined within one
+                                    <code class="ph codeph">&lt;Argument&gt;</code> sub-section.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__1 " rowspan="3"><code class="ph codeph">&lt;Argument&gt;
+                                </code></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 "></td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Sub-section within
+                                    <code class="ph codeph">&lt;Arguments&gt;</code> that defines one argument for
+                                the parent obligation. Definition consists of a name and all valid
+                                values. Each value must be specified by a Value element.<p class="p">Each
+                                    argument may be designated “usereditable=yes”. When this flag is
+                                    present, the argument field is open for users to provide any
+                                    value, in addition to those predefined here. If this flag is
+                                    absent, the field is not editable, and users can only select one
+                                    of the defined values.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 ">Name</td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Specifies the name of the argument that is passed
+                                in the K-V pair in the command line. This is also the label that
+                                appears in the policy editor to identify this argument.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__2 ">Value</td>
+                            <td class="entry" headers="registering_custom_obligations__af1260056__entry__3 ">Specifies a valid value for this argument. To mark
+                                a value as the default—the value that appears when the user selects
+                                this argument in an obligation definition panel—include the
+                                following syntax:<p class="p"><code class="ph codeph">&lt;Value
+                                        default=”true”&gt;value&lt;/value&gt;</code></p></td>
+                        </tr>
+                    </tbody></table></div>
+    </div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="configuration_settings.html" title="The main Control Center configuration file, configuration.xml, is copied to the host server when you first install the Control Center.">Configuration settings</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="configuration_settings.html" title="The main Control Center configuration file, configuration.xml, is copied to the host server when you first install the Control Center.">Configuration settings</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

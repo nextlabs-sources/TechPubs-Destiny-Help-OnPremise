@@ -1,0 +1,420 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="description" content="You can add policy components to define subjects, resources, and actions in your environment any time as needed." /><meta name="DC.Relation" scheme="URI" content="managing_policy_components.html" /><meta name="DC.Relation" scheme="URI" content="adding_and_editing_resource_types.html" /><meta name="DC.Relation" scheme="URI" content="constructing_policies.html" /><meta name="DC.Relation" scheme="URI" content="deploying_components.html" /><meta name="DC.Relation" scheme="URI" content="adding_policies.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="adding_and_editing_policy_components" />        
+      <title>Adding and editing policy components</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="adding_and_editing_policy_components-d66e2447" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="adding_and_editing_policy_components" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides an overview of policies and explains how to create and manage         Policy Model resource types and
+                  policy components.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="managing_policy_components"><span class="title"><a href="managing_policy_components.html">Managing policy components</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Policy components are the abstract building blocks or raw material of information         control policies.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="adding_and_editing_policy_components"><span class="title"><a href="adding_and_editing_policy_components.html">Adding and editing policy components</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">You         can add policy components to define subjects, resources, and actions in your environment any         time as needed.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="policy_and_policy_model_overview-d66e2359" class="topicref" data-id="policy_and_policy_model_overview" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action policy_and_policy_model_overview-d66e2359-link" class="wh-expand-btn"></span><span class="title"><a href="policy_and_policy_model_overview.html" id="policy_and_policy_model_overview-d66e2359-link">Policy and Policy Model overview</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides an overview of policies and explains how to create and manage         Policy Model resource types and
+                  policy components.
+                  
+               </p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_policies-d66e2370" class="topicref" data-id="about_policies" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_policies.html" id="about_policies-d66e2370-link">About policies</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Policies are statements that describe resource usage situations and specify the         actions to be taken when those situations
+                        arise.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="overview_of_policy_implementation-d66e2381" class="topicref" data-id="overview_of_policy_implementation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="overview_of_policy_implementation.html" id="overview_of_policy_implementation-d66e2381-link">Overview of policy implementation</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Implementing policies involves several tasks.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="managing_policy_model_resource_types-d66e2392" class="topicref" data-id="managing_policy_model_resource_types" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action managing_policy_model_resource_types-d66e2392-link" class="wh-expand-btn"></span><span class="title"><a href="managing_policy_model_resource_types.html" id="managing_policy_model_resource_types-d66e2392-link">Managing Policy Model resource types</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Policy Model resource types are the templates that include information about         attributes, actions, and obligations.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="managing_policy_components-d66e2425" class="topicref" data-id="managing_policy_components" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action managing_policy_components-d66e2425-link" class="wh-expand-btn"></span><span class="title"><a href="managing_policy_components.html" id="managing_policy_components-d66e2425-link">Managing policy components</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Policy components are the abstract building blocks or raw material of information         control policies.</p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_component_types-d66e2436" class="topicref" data-id="about_component_types" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_component_types.html" id="about_component_types-d66e2436-link">About component types</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">You create components by specifying a component type and defining the component’s         properties.</p>
+                           </span></span></span></li>
+               <li role="treeitem" class="active"><span data-tocid="adding_and_editing_policy_components-d66e2447" class="topicref" data-id="adding_and_editing_policy_components" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="adding_and_editing_policy_components.html" id="adding_and_editing_policy_components-d66e2447-link">Adding and editing policy components</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">You         can add policy components to define subjects, resources, and actions in your environment any         time as needed.</p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Adding and editing policy components</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">You
+        can add policy components to define subjects, resources, and actions in your environment any
+        time as needed.</p>
+        <section class="section context" id="adding_and_editing_policy_components__context_ctl_zsk_x2b">
+            <p class="p">After policy components are defined, they become available to policy designers for
+                use in policies.</p>
+            <p class="p">Set up a policy model by creating resource types for use in components.</p>
+        </section>
+        <ol class="ol steps" id="adding_and_editing_policy_components__steps_rgh_smx_hfb"><li class="li step stepexpand">
+                <span class="ph cmd">Log in to the interface with an account that has permission to add
+                    components.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">On the left navigation bar, in the Components section, select a component
+                    type:</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="adding_and_editing_policy_components__ul_tgh_5nx_hfb">
+                        <li class="li">Subject</li>
+                        <li class="li">Resource</li>
+                        <li class="li">Action</li>
+                    </ul>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Do one of the following:</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="adding_and_editing_policy_components__ul_vbd_wnx_hfb">
+                        <li class="li">Click <span class="ph uicontrol">ADD COMPONENT</span>.</li>
+                        <li class="li">Click the name of an existing component to edit it.</li>
+                    </ul>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Select the component type.</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="adding_and_editing_policy_components__ul_qbs_fcq_3gb">
+                        <li class="li">For subject component: Select one of the following subject type:<div class="p">
+                                <div class="simpletable-container"><table class="simpletable frame-all" id="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead><tr class="sthead">
+                                        <th class="stentry" id="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__1">Subject Type</th>
+                                        <th class="stentry" id="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__2">Description</th>
+                                    </tr></thead><tbody><tr class="strow">
+                                        <td class="stentry" headers="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__1">Application</td>
+                                        <td class="stentry" headers="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__2">A Application program whose attributes may be
+                                            referenced in a component.</td>
+                                    </tr><tr class="strow">
+                                        <td class="stentry" headers="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__1">Host</td>
+                                        <td class="stentry" headers="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__2">A computer whose attributes may be referenced in a
+                                            component.</td>
+                                    </tr><tr class="strow">
+                                        <td class="stentry" headers="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__1">User</td>
+                                        <td class="stentry" headers="adding_and_editing_policy_components__simpletable_v3b_kcq_3gb__stentry__2">An actor whose attributes may be referenced in a
+                                            component.</td>
+                                    </tr></tbody></table></div>
+                            </div></li>
+                        <li class="li">For resource or action component: Select the resource type to use as the
+                            template for this component.<div class="note note note_note"><span class="note__title">Note:</span> The list is empty if no resource types
+                                have been added.</div></li>
+                    </ul>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Provide the component information. This information is displayed on the
+                    Components page and used to identify the component in the system:</span>
+                <div class="itemgroup info">
+                    <table class="table" id="adding_and_editing_policy_components__aa1230939"><caption><span class="table--title-label">Table 1. </span><span class="title">Component information</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:66.66666666666666%" /></colgroup><thead class="thead">
+                                <tr>
+                                    <th class="entry" id="adding_and_editing_policy_components__aa1230939__entry__1">Option</th>
+                                    <th class="entry" id="adding_and_editing_policy_components__aa1230939__entry__2">Description</th>
+                                </tr>
+                            </thead><tbody class="tbody">
+                                <tr>
+                                    <td class="entry" headers="adding_and_editing_policy_components__aa1230939__entry__1 ">Display Name</td>
+                                    <td class="entry" headers="adding_and_editing_policy_components__aa1230939__entry__2 ">The display name of the item. Names cannot
+                                        be longer than
+                                        255
+                                        characters, and cannot include the reserved characters $, /,
+                                        ?, \, &amp;, or *. Names can include multibyte characters,
+                                        such as those used by Asian languages.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="adding_and_editing_policy_components__aa1230939__entry__1 ">Description</td>
+                                    <td class="entry" headers="adding_and_editing_policy_components__aa1230939__entry__2 ">A description of the item. This field is
+                                        useful for explaining how the item is used and for
+                                        documenting changes to the item. Descriptions can include
+                                        multibyte characters, such as those used by Asian
+                                        languages.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="adding_and_editing_policy_components__aa1230939__entry__1 ">Tags</td>
+                                    <td class="entry" headers="adding_and_editing_policy_components__aa1230939__entry__2 ">Tags are labels that identify or classify
+                                        objects. For example, you could apply a tag named Team1 to
+                                        all documents related to the Team1 project. You could then
+                                        search for documents with the Team1tag, or set access
+                                        requirements for documents with the Team1 tag.<div class="note note note_note"><span class="note__title">Note:</span> Tags
+                                            used in components are available only to components;
+                                            component tags are not available to policies, and policy
+                                            tags are not available to components.</div></td>
+                                </tr>
+                            </tbody></table>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Do any of the following:</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="adding_and_editing_policy_components__ul_ns3_h4x_hfb">
+                        <li class="li">Select the conditions to be used with the component. Conditions appear
+                            only if they have been added to the selected resource type. If you have
+                            mutli-value attributes, you can specify multiple values by entering the
+                            value and pressing <span class="ph uicontrol">Enter</span>. <p class="p"><img class="image" id="adding_and_editing_policy_components__image_bds_5l4_kgb" src="images/conditions_new.png" height="117" width="472" /></p><p class="p">You can click
+                                    <span class="ph uicontrol">PREVIEW</span> to display all of the individual
+                                entities that would be included in a component as it is presently
+                                defined. It displays at the right side of the window.</p><div class="p">
+                                <figure class="fig fignone" id="adding_and_editing_policy_components__fig_c1r_244_kgb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Preview component</figcaption>
+                                    
+                                    <img class="image" id="adding_and_editing_policy_components__image_d1r_244_kgb" src="images/preview_comp.png" height="263" width="266" />
+                                </figure>
+                            </div></li>
+                        <li class="li">Select the actions to be available with the component. Actions appear
+                            only if they have been added to the selected resource type.</li>
+                        <li class="li">Select the members you want to include or exclude in the component.<div class="p">
+                                <ol class="ol" type="a" id="adding_and_editing_policy_components__ol_r42_mtq_3gb">
+                                    <li class="li">Click <span class="ph uicontrol">ADD MEMBER CONDITION</span>.</li>
+                                    <li class="li">Choose one of the available operators:<ul class="ul" id="adding_and_editing_policy_components__ul_sqy_mtq_3gb">
+                                            <li class="li"><span class="ph uicontrol">In</span></li>
+                                            <li class="li"><span class="ph uicontrol">Not In</span></li>
+                                        </ul></li>
+                                    <li class="li">Specify the members by perform one of the following
+                                            actions:<ul class="ul" id="adding_and_editing_policy_components__ul_mgc_qtq_3gb">
+                                            <li class="li">To search for members, begin typing in the field,
+                                                then select the members.</li>
+                                            <li class="li">To add a member, type a name, select the check box
+                                                next to the name, which is identified as (NEW), then
+                                                ;click <span class="ph uicontrol">APPLY</span>. </li>
+                                            <li class="li">(For subject type components only) To search for
+                                                members, begin typing in the field, then click
+                                                  <span class="ph uicontrol">LOOKUP</span>.<div class="p">
+                                                  <figure class="fig fignone" id="adding_and_editing_policy_components__fig_epc_cp4_kgb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Members: Filter</figcaption>
+                                                  
+                                                  <img class="image" id="adding_and_editing_policy_components__image_fpc_cp4_kgb" src="images/members.png" height="229" width="484" />
+                                                  </figure>
+                                                </div> A list of enrolled members appear. Select the
+                                                members from the list of enrolled members. Based on
+                                                the subject type you select, you have the following
+                                                filters available:<div class="p">
+                                                  <div class="simpletable-container"><table class="simpletable frame-all" id="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb"><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead><tr class="sthead">
+                                                  <th class="stentry" id="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__1">Subject Type</th>
+                                                  <th class="stentry" id="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__2">Filters</th>
+                                                  </tr></thead><tbody><tr class="strow">
+                                                  <td class="stentry" headers="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__1">Application</td>
+                                                  <td class="stentry" headers="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__2">Components, Applications</td>
+                                                  </tr><tr class="strow">
+                                                  <td class="stentry" headers="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__1">Host</td>
+                                                  <td class="stentry" headers="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__2">Components, Hosts, Host Groups. <p class="p">After
+                                                  selecting a host group, you can click the host
+                                                  group to view all members of the group and search
+                                                  for members of the group.</p></td>
+                                                  </tr><tr class="strow">
+                                                  <td class="stentry" headers="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__1">User</td>
+                                                  <td class="stentry" headers="adding_and_editing_policy_components__simpletable_vkp_fzq_3gb__stentry__2">Components, Users, User Groups. <p class="p">After
+                                                  selecting a user group, you can click the user
+                                                  group to view all members of the group and search
+                                                  for members of the group.</p></td>
+                                                  </tr></tbody></table></div>
+                                                </div>
+                                            </li>
+                                        </ul></li>
+                                    <li class="li">Click <span class="ph uicontrol">APPLY</span>.<p class="p">To view the details,
+                                            click the user, component, or the user group. </p><div class="p">
+                                            <figure class="fig fignone" id="adding_and_editing_policy_components__fig_ubh_3gp_kgb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Component details</figcaption>
+                                                
+                                                <img class="image" id="adding_and_editing_policy_components__image_vbh_3gp_kgb" src="images/group_details.png" height="267" width="223" />
+                                            </figure>
+                                        </div><div class="p">
+                                            <figure class="fig fignone" id="adding_and_editing_policy_components__fig_oq1_mgp_kgb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>User group details</figcaption>
+                                                
+                                                <img class="image" id="adding_and_editing_policy_components__image_pq1_mgp_kgb" src="images/group_details2.png" height="218" width="223" />
+                                            </figure>
+                                        </div></li>
+                                </ol>
+                            </div></li>
+                    </ul>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Do one of the following:</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="adding_and_editing_policy_components__ul_izk_k4x_hfb">
+                        <li class="li">Click <span class="ph uicontrol">SAVE</span> to save the component in the Draft
+                                state.<div class="note note note_note"><span class="note__title">Note:</span> If you chose <span class="ph uicontrol">SAVE</span>, you must
+                                deploy the component before policies that use it can be
+                                enforced.</div></li>
+                        <li class="li">Click <span class="ph uicontrol">SAVE &amp; DEPLOY</span> to make the component
+                            available for deployment with
+                                policies.<div class="p">The
+                                Deploy dialog appears.<figure class="fig fignone" id="adding_and_editing_policy_components__fig_l2q_klr_3gb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Deployment start time</figcaption>
+                                    
+                                    <img class="image" id="adding_and_editing_policy_components__image_m2q_klr_3gb" src="images/deploy_time.png" height="283" width="305" />
+                                </figure></div></li>
+                    </ul>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">If
+                    you selected <span class="ph uicontrol">SAVE &amp; DEPLOY</span>, select one of the
+                    following options:</span>
+                <div class="itemgroup info">
+                    <ul class="ul" id="adding_and_editing_policy_components__ul_dtq_slr_3gb">
+                        <li class="li">Deploy immediately: The component is deployed immediately.</li>
+                        <li class="li">Specify: The component is deployed at the time that you specify in the
+                            future. The components state is Scheduled for Deployment. </li>
+                    </ul>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">In Deployment Contents, look for the Modified components category. If present,
+                    it shows policy components that are needed by the object you are trying to
+                    deploy and that have been modified and resubmitted for deployment. Check the box
+                    next to any of these components that you want to schedule for deployment at the
+                    same time.</span>
+                <div class="itemgroup info">
+                    <div class="note note note_note"><span class="note__title">Note:</span> In the Deployment Contents section, if you choose to clear any check box
+                        under Modified components, the system ignores the changes done to that
+                        component and uses the previously deployed component.</div>
+                </div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">CONFIRM</span>.</span>
+            </li></ol>
+        <section class="section postreq" id="adding_and_editing_policy_components__postreq_ijw_n4x_hfb">Create additional components or construct policies that
+            use the components.</section>
+    </div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="constructing_policies.html" title="Policy designers construct policies to control information access and use in an organization.">Constructing policies</a></div></div><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="adding_and_editing_resource_types.html" title="You can add or edit resource types at any time. To make attributes, actions, and obligations available to policy designers, resource types should be added before components are created.">Adding and editing resource types</a></div><div class="related_link"><a class="navheader_parent_path" href="deploying_components.html" title="Components used in policies must be deployed before policies that use those components can be enforced.">Deploying components</a></div><div class="related_link"><a class="navheader_parent_path" href="adding_policies.html" title="Adding policies">Adding policies</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="constructing_policies.html" title="Policy designers construct policies to control information access and use in an organization.">Constructing policies</a></div></div><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="adding_and_editing_resource_types.html" title="You can add or edit resource types at any time. To make attributes, actions, and obligations available to policy designers, resource types should be added before components are created.">Adding and editing resource types</a></div><div class="related_link"><a class="navheader_parent_path" href="deploying_components.html" title="Components used in policies must be deployed before policies that use those components can be enforced.">Deploying components</a></div><div class="related_link"><a class="navheader_parent_path" href="adding_policies.html" title="Adding policies">Adding policies</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

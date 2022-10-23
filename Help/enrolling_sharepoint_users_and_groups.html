@@ -1,0 +1,381 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="task" /><meta name="description" content="Enrolling SharePoint groups is similar to the procedure for enrolling users and groups." /><meta name="indexterms" content="sp.sample.default.conn, connection files, for SharePoint groups, ad.sample.default.conn (connection file), example of, password, in portal connection file, portals, in connection file, ScheduledSyncTime, for portal enrollments, ScheduledSyncInterval, for portal enrollments" /><meta name="DC.subject" content="sp.sample.default.conn, connection files, for SharePoint groups, ad.sample.default.conn (connection file), example of, password, in portal connection file, portals, in connection file, ScheduledSyncTime, for portal enrollments, ScheduledSyncInterval" /><meta name="keywords" content="sp.sample.default.conn, connection files, for SharePoint groups, ad.sample.default.conn (connection file), example of, password, in portal connection file, portals, in connection file, ScheduledSyncTime, for portal enrollments, ScheduledSyncInterval" /><meta name="DC.Relation" scheme="URI" content="enrolling_sharepoint_groups.html" /><meta name="DC.Relation" scheme="URI" content="setting_access_permissions.html" /><meta name="DC.Relation" scheme="URI" content="setting_access_permissions.html" /><meta name="DC.Relation" scheme="URI" content="importing_sharepoint_certificates.html" /><meta name="DC.Relation" scheme="URI" content="command_line_arguments_for_enrollment_manager.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="enrolling_sharepoint_users_and_groups" />        
+      <title>Enrolling SharePoint users and groups</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="enrolling_sharepoint_users_and_groups-d66e1292" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="enrolling_sharepoint_users_and_groups" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to enroll applications, file shares, and         sites.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="enrolling_file_shares"><span class="title"><a href="enrolling_file_shares.html">Enrolling file shares</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Enrolling information about file shares ensures that the use of differing file share         paths to access the same document
+                  does not result in inconsistent policy         enforcement.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="enrolling_sharepoint_groups"><span class="title"><a href="enrolling_sharepoint_groups.html">Enrolling SharePoint groups</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The SharePoint Enforcer is available exclusively with the Entitlement Management         product. If you are not using that
+                  product, you can ignore this section.
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="enrolling_sharepoint_users_and_groups"><span class="title"><a href="enrolling_sharepoint_users_and_groups.html">Enrolling SharePoint users and groups</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Enrolling SharePoint groups is similar to the procedure for enrolling users and         groups.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="enrolling_other_entities-d66e1154" class="topicref" data-id="enrolling_other_entities" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action enrolling_other_entities-d66e1154-link" class="wh-expand-btn"></span><span class="title"><a href="enrolling_other_entities.html" id="enrolling_other_entities-d66e1154-link">Enrolling other entities</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to enroll applications, file shares, and         sites.</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="enrolling_applications-d66e1165" class="topicref" data-id="enrolling_applications" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action enrolling_applications-d66e1165-link" class="wh-expand-btn"></span><span class="title"><a href="enrolling_applications.html" id="enrolling_applications-d66e1165-link">Enrolling applications</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Applications, unlike users, cannot be automatically enrolled from LDAP         directories.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="enrolling_file_shares-d66e1201" class="topicref" data-id="enrolling_file_shares" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action enrolling_file_shares-d66e1201-link" class="wh-expand-btn"></span><span class="title"><a href="enrolling_file_shares.html" id="enrolling_file_shares-d66e1201-link">Enrolling file shares</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Enrolling information about file shares ensures that the use of differing file share         paths to access the same document
+                        does not result in inconsistent policy         enforcement.
+                        
+                     </p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="about_resource_path_discovery-d66e1212" class="topicref" data-id="about_resource_path_discovery" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_resource_path_discovery-d66e1212-link" class="wh-expand-btn"></span><span class="title"><a href="about_resource_path_discovery.html" id="about_resource_path_discovery-d66e1212-link">About Resource Path Discovery</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The enrollment process involves discovering file shares defined on network hosts, and         then enrolling them into the
+                              Information Network Directory.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="enrolling_location_sites-d66e1259" class="topicref" data-id="enrolling_location_sites" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="enrolling_location_sites.html" id="enrolling_location_sites-d66e1259-link">Enrolling location sites</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A location site is a Control Center term referring to a group of hosts that you want         to consider as a single location
+                              because they share certain characteristics.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="true"><span data-tocid="enrolling_sharepoint_groups-d66e1270" class="topicref" data-id="enrolling_sharepoint_groups" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action enrolling_sharepoint_groups-d66e1270-link" class="wh-expand-btn"></span><span class="title"><a href="enrolling_sharepoint_groups.html" id="enrolling_sharepoint_groups-d66e1270-link">Enrolling SharePoint groups</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The SharePoint Enforcer is available exclusively with the Entitlement Management         product. If you are not using that
+                              product, you can ignore this section.
+                              
+                           </p>
+                           </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="setting_access_permissions-d66e1281" class="topicref" data-id="setting_access_permissions" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="setting_access_permissions.html" id="setting_access_permissions-d66e1281-link">Setting access permissions</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">To enable the Control Center to connect to the SharePoint server, you need to create         a service account and set it
+                                    up with proper access level and security settings.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem" class="active"><span data-tocid="enrolling_sharepoint_users_and_groups-d66e1292" class="topicref" data-id="enrolling_sharepoint_users_and_groups" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="enrolling_sharepoint_users_and_groups.html" id="enrolling_sharepoint_users_and_groups-d66e1292-link">Enrolling SharePoint users and groups</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Enrolling SharePoint groups is similar to the procedure for enrolling users and         groups.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="synchronizing_sharepoint_enrollments-d66e1303" class="topicref" data-id="synchronizing_sharepoint_enrollments" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="synchronizing_sharepoint_enrollments.html" id="synchronizing_sharepoint_enrollments-d66e1303-link">Synchronizing SharePoint enrollments</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The SharePoint connection file contains two parameters, ScheduledSyncTime and         ScheduledSyncInterval, that control
+                                    the auto-synchronization feature.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="importing_sharepoint_certificates-d66e1314" class="topicref" data-id="importing_sharepoint_certificates" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="importing_sharepoint_certificates.html" id="importing_sharepoint_certificates-d66e1314-link">Importing SharePoint certificates</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Control Center needs to connect to the monitored SharePoint servers in the network         from time to time.</p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+               <li role="treeitem"><span data-tocid="enrollment_utility_password_requirements-d66e1325" class="topicref" data-id="enrollment_utility_password_requirements" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="enrollment_utility_password_requirements.html" id="enrollment_utility_password_requirements-d66e1325-link">Enrollment utility password requirements</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Some enrollment utilities require users to enter the password of the super user         Administrator account, which is initially
+                              configured during Control Center installation.         This password can be changed as needed.
+                              
+                           </p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Enrolling SharePoint users and groups</h1>
+    
+    
+    <div class="body taskbody"><p class="shortdesc">Enrolling SharePoint groups is similar to the procedure for enrolling users and
+        groups.</p>
+        <section class="section context" id="enrolling_sharepoint_users_and_groups__context_r13_jvj_w2b">
+            <div class="p">You use the Enrollment Manager to enroll the groups, based on a connection file and a
+                definition file. For SharePoint sites, however, you need not make any changes to
+                customize the definition file—only the connection file.<figure class="fig fignone" id="enrolling_sharepoint_users_and_groups__fig_irk_bph_kfb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Enrollment Connections, SharePoint Groups</figcaption>
+                    
+                    <img class="image" id="enrolling_sharepoint_users_and_groups__image_jrk_bph_kfb" src="images/enroll_conn.png" height="269" width="622" />
+                </figure></div>
+            <p class="p">The site connection needs to be set up to retrieve data on groups, which is the only
+                SharePoint data that is actually enrolled into the Control Center’s data tables.
+                Control Center connects to the SharePoint server whenever a user browses the site
+                while defining components; but site content is not actually enrolled the way Active
+                Directory content is.</p>
+            <p class="p">If you need to enroll groups from more than one SharePoint site, you must designate
+                each site in the SharePoint connection file.</p>
+        </section>
+        <ol class="ol steps" id="enrolling_sharepoint_users_and_groups__steps_w32_lph_kfb"><li class="li step stepexpand">
+                <span class="ph cmd">Open the sample SharePoint connection file sp.sample.default.conn, and edit the
+                    elements as shown in the following figure. Required elements are indicated by
+                    rectangles; optional elements are indicated by ovals.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Save the changes and rename the file to prevent it from being overwritten the
+                    next time the Control Center is upgraded. Be sure to specify the name properly
+                    with the <span class="keyword cmdname">-a</span> flag in the Enroll command line (Step 4).</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">You ordinarily do not need to make any changes to the content of the definition
+                    file, sp.sample.default.def, but you do need to copy it somewhere where you can
+                    point to it in the Enroll command line (Step 4), and you should rename the
+                    filename to prevent the file from being replaced the next time you upgrade
+                    Control Center.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Change to the directory
+                        <span class="ph filepath"><var class="keyword varname">&lt;InstallDir&gt;</var>\tools</span>. By
+                    default, this is:</span>
+                <div class="itemgroup info"><span class="ph filepath">\Program Files\NextLabs\PolicyServer\tools\enrollment</span><figure class="fig fignone" id="enrolling_sharepoint_users_and_groups__fig_z42_byh_kfb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Sample SharePoint Connection File (sp.sample.default.conn)</figcaption>
+                        
+                        <img class="image" id="enrolling_sharepoint_users_and_groups__image_ap2_byh_kfb" src="images/sp_conn_file.png" height="238" width="490" />
+                    </figure><table class="table" id="enrolling_sharepoint_users_and_groups__ae1273011"><caption><span class="table--title-label">Table 1. </span><span class="title">Elements of SharePoint connection files</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:66.66666666666666%" /></colgroup><thead class="thead">
+                                <tr>
+                                    <th class="entry" id="enrolling_sharepoint_users_and_groups__ae1273011__entry__1">Element</th>
+                                    <th class="entry" id="enrolling_sharepoint_users_and_groups__ae1273011__entry__2">Description</th>
+                                </tr>
+                            </thead><tbody class="tbody">
+                                <tr>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__1 ">login</td>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__2 ">Specifies a username with access
+                                        privileges to connect to the SharePoint server—specifically,
+                                        of the Windows service account that was specially created
+                                        for this connection.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__1 ">domain</td>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__2 ">Specifies the fully qualified domain name
+                                        (FQDN) on which the SharePoint server is located. If the
+                                        SharePoint server uses SSL encryption, the FQDN value must
+                                        match the Common Name (CN) value of the SharePoint
+                                        certificate.</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__1 ">password</td>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__2 ">Specifies a valid password for this user,
+                                        for connecting to the SharePoint server.<p class="p">This parameter is
+                                            optional. Because it is an unencrypted string, you may
+                                            prefer not to expose it in the connection file this way.
+                                            If the parameter is not present in the file (that is, if
+                                            you leave it commented out), the user is prompted for
+                                            the connection at the time when he performs the
+                                            enrollment. If the parameter is present, it is simply be
+                                            read, with no such prompt. This latter may be preferable
+                                            for the sake of convenience, during testing or in other
+                                            restricted-use context when security is not a
+                                            concern.</p><p class="p">To define an unencrypted password, remove
+                                            the # character at the beginning of the
+                                        line.</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__1 ">portals</td>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__2 ">Each line here represents one site on the
+                                        SharePoint site collection, which you want to enroll. It
+                                        must contain the full URL delimited by backslash characters,
+                                        as shown in the placeholder values in the template file. The
+                                        hostname in the URL must match the Common Name (CN) of the
+                                        SharePoint certificate. If you are adding multiple portal
+                                        sites, you can separate them with \n\</td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__1 ">ScheduledSyncTime</td>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__2 ">Optional parameter. Enables you to set a
+                                        specific time for the enrollment to be automatically
+                                        synchronized with its source. After this date and time, the
+                                        enrollment autosynchronizes at the interval specified by the
+                                        ScheduledSyncInterval parameter. <p class="p">The date and time value
+                                            is locale-specific, and you must use Java's MEDIUM style
+                                            for the date, and the SHORT style for the time. For
+                                            example:</p><p class="p">For English (US): Sep 18, 2013
+                                            6:00PM</p><p class="p">For English (UK):18-Sep-2013
+                                            18:00</p><p class="p">For the German (Germany):18.09.2013
+                                            18:00</p><p class="p">At enroll-time, the date must be a future
+                                            date.</p><p class="p">This value is only active if the Scheduled
+                                            Sync Interval is set to some positive value. If you
+                                            leave ScheduledSyncInterval at the default, 0, the
+                                            synchronization feature is disabled. </p></td>
+                                </tr>
+                                <tr>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__1 ">ScheduledSyncInterval</td>
+                                    <td class="entry" headers="enrolling_sharepoint_users_and_groups__ae1273011__entry__2 ">Optional parameter. When left at the
+                                        default, 0, disables the automatic synchronization feature.
+                                        When changed to any positive value, specifies a regular
+                                        re-synchronization schedule, expressed in minutes following
+                                        the time specified by the ScheduledSyncTime.<p class="p">This setting
+                                            has no influence until after the ScheduledSyncTime
+                                            passes. That is, in the example above Control Center
+                                            would wait until 1 a.m. on May 2 to synchronize the
+                                            enrollment to its source, and then would re-sync it
+                                            every 6 hours (360 minutes) thereafter.</p><p class="p">Manual
+                                            synchronization is possible only if this value is set to
+                                            zero. If you have changed it to enable automatic
+                                            synchronization, you must change it back to zero to run
+                                            a manual sync.</p></td>
+                                </tr>
+                            </tbody></table></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Run the Enrollment Manager’s Enroll command with the Type = PORTAL along with
+                    the other standard arguments, as in the following example:</span>
+                <div class="itemgroup info"><span class="keyword cmdname">enrollmgr.bat -enroll -t PORTAL -n MyCompany2 -s &lt;Moskau&gt; -p 8443
+                        -u Administrator -w MY876password -a sp.default.conn -d
+                        sp.default.def</span></div>
+                <div class="itemgroup info">This line must specify a unique enrollment name, the name and port of the
+                    Control Center host, a Control Center user and password, and the names and paths
+                    of the connection and definition files.</div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Run the Enroll Manager’s Sync command, as shown in the following example.
+                    Neither the connection nor the definition file is required for this command; the
+                    enrollment name is sufficient.</span>
+                <div class="itemgroup info"><span class="keyword cmdname">enrollmgr.bat -sync -n MyCompany2 -s &lt;host&gt; -p 8443 -u &lt;Admin&gt;
+                        -w &lt;securityPwd&gt;</span></div>
+                <div class="itemgroup info">At this point the SharePoint groups are available for use in defining
+                    components in Control Center. You can use the Lookup button to display all
+                    portal content in a tree structure, so you can browse it directly as you define
+                    portal components.</div>
+            </li></ol>
+    </div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="setting_access_permissions.html" title="To enable the Control Center to connect to the SharePoint server, you need to create a service account and set it up with proper access level and security settings.">Setting access permissions</a></div><div class="related_link"><a class="navheader_parent_path" href="importing_sharepoint_certificates.html" title="Control Center needs to connect to the monitored SharePoint servers in the network from time to time.">Importing SharePoint certificates</a></div></div><div class="linklist relinfo relref"><strong>Related reference</strong><br /><div class="related_link"><a class="navheader_parent_path" href="command_line_arguments_for_enrollment_manager.html" title="Command line arguments for Enrollment Manager">Command line arguments for Enrollment Manager</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><div class="related_link"><a class="navheader_parent_path" href="setting_access_permissions.html" title="To enable the Control Center to connect to the SharePoint server, you need to create a service account and set it up with proper access level and security settings.">Setting access permissions</a></div><div class="related_link"><a class="navheader_parent_path" href="importing_sharepoint_certificates.html" title="Control Center needs to connect to the monitored SharePoint servers in the network from time to time.">Importing SharePoint certificates</a></div></div><div class="linklist relinfo relref"><strong>Related reference</strong><br /><div class="related_link"><a class="navheader_parent_path" href="command_line_arguments_for_enrollment_manager.html" title="Command line arguments for Enrollment Manager">Command line arguments for Enrollment Manager</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

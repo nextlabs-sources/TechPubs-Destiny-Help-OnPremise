@@ -1,0 +1,380 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="description" content="Use the following methods when making authorization requests." /><meta name="DC.Relation" scheme="URI" content="sdk_quick_reference.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="methods" />        
+      <title>Methods</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="methods-d66e4027" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="methods" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="using_the_java_client_library"><span class="title"><a href="using_the_java_client_library.html">Using the Java client library</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to use NextLabs OpenAz PEP Java client with remote PDPs         (REST PDPs and CloudPDPs) and embedded
+                  PDPs.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="sdk_quick_reference"><span class="title"><a href="sdk_quick_reference.html">SDK quick reference</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides a quick reference for the OpenAz PEP SDK. </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="methods"><span class="title"><a href="methods.html">Methods</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use the following methods when making authorization requests.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" class="topicref" data-id="pep_client_sdk__openaz_api" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action pep_client_sdk__openaz_api-d66e3838-link" class="wh-expand-btn"></span><span class="title"><a href="pep_client_sdk__openaz_api.html" id="pep_client_sdk__openaz_api-d66e3838-link">PEP client SDK (OpenAz API)</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_the_openaz_pep_client_sdk-d66e3849" class="topicref" data-id="about_the_openaz_pep_client_sdk" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_the_openaz_pep_client_sdk.html" id="about_the_openaz_pep_client_sdk-d66e3849-link">About the OpenAz PEP client SDK</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">OpenAz is an open source initiative that provides a standards-based         interface.</p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="configuring_a_development_environment-d66e3860" class="topicref" data-id="configuring_a_development_environment" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="configuring_a_development_environment.html" id="configuring_a_development_environment-d66e3860-link">Configuring a development environment</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">To use this API, you must configure a development environment as described in the PEP         development process section.
+                        
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871" class="topicref" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871-link" class="wh-expand-btn"></span><span class="title"><a href="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep.html" id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871-link">Configuring one-way and two-way SSL authentication between PDP and PEP</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">For the REST API, you can configure the communication between a PDP server and a PEP         client using one-way or two-way
+                        SSL authentication.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="using_the_java_client_library-d66e3908" class="topicref" data-id="using_the_java_client_library" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action using_the_java_client_library-d66e3908-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_java_client_library.html" id="using_the_java_client_library-d66e3908-link">Using the Java client library</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to use NextLabs OpenAz PEP Java client with remote PDPs         (REST PDPs and CloudPDPs) and embedded
+                        PDPs.
+                        
+                     </p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="setting_up_the_java_sdk-d66e3919" class="topicref" data-id="setting_up_the_java_sdk" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="setting_up_the_java_sdk.html" id="setting_up_the_java_sdk-d66e3919-link">Setting up the Java SDK</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">If you are developing Java PEPs, add the required JAR libraries to your Java project         to set up the Java SDK.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="invoking_the_pdp-d66e3930" class="topicref" data-id="invoking_the_pdp" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action invoking_the_pdp-d66e3930-link" class="wh-expand-btn"></span><span class="title"><a href="invoking_the_pdp.html" id="invoking_the_pdp-d66e3930-link">Invoking the PDP</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">To invoke the PDP, you must configure the Java client SDK as described in this         section.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="making_authorization_requests_using_java-d66e3991" class="topicref" data-id="making_authorization_requests_using_java" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="making_authorization_requests_using_java.html" id="making_authorization_requests_using_java-d66e3991-link">Making authorization requests using Java</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">PEPs (policy enforcement points) sent authorization requests to PDPs (policy decision         points) and receive authorization
+                              decisions in response. To make authorization requests         using Java PEPs, use the NextLabs PEPAgent.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="exception_handling-d66e4002" class="topicref" data-id="exception_handling" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="exception_handling.html" id="exception_handling-d66e4002-link">Exception handling</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Based on OpenAz specification, <code class="ph codeph">result.allowed()</code> supports only two         responses: Allow and Deny.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="true"><span data-tocid="sdk_quick_reference-d66e4016" class="topicref" data-id="sdk_quick_reference" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action sdk_quick_reference-d66e4016-link" class="wh-expand-btn"></span><span class="title"><a href="sdk_quick_reference.html" id="sdk_quick_reference-d66e4016-link">SDK quick reference</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides a quick reference for the OpenAz PEP SDK. </p>
+                           </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="methods-d66e4027" class="topicref" data-id="methods" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="methods.html" id="methods-d66e4027-link">Methods</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use the following methods when making authorization requests.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="request_category_classes-d66e4038" class="topicref" data-id="request_category_classes" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="request_category_classes.html" id="request_category_classes-d66e4038-link">Request category classes</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Request category classes represent components in an authorization request, such as         the subject, action, and resource.</p>
+                                 </span></span></span></li>
+                     <li role="treeitem"><span data-tocid="pepresponse-d66e4049" class="topicref" data-id="pepresponse" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="pepresponse.html" id="pepresponse-d66e4049-link">PEPResponse</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Cloud PDP responds to authorization requests by returning the             <code class="ph codeph">PEPResponse</code> object.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_javascript_client_library-d66e4063" class="topicref" data-id="using_the_javascript_client_library" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_javascript_client_library-d66e4063-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_javascript_client_library.html" id="using_the_javascript_client_library-d66e4063-link">Using the JavaScript client library</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="rest_api_for_external_pdps-d66e4126" class="topicref" data-id="rest_api_for_external_pdps" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rest_api_for_external_pdps-d66e4126-link" class="wh-expand-btn"></span><span class="title"><a href="rest_api_for_external_pdps.html" id="rest_api_for_external_pdps-d66e4126-link">REST API for external PDPs</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the REST API to send policy evaluation requests to         external PDPs (Policy Decision
+                        Points).
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="overview_of_plug_ins-d66e4389" class="topicref" data-id="overview_of_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action overview_of_plug_ins-d66e4389-link" class="wh-expand-btn"></span><span class="title"><a href="overview_of_plug_ins.html" id="overview_of_plug_ins-d66e4389-link">Overview of plug-ins</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Developers can extend the functionality of the Control Center and Policy Controller         through plug-ins, which are separately
+                        installed pieces of software written in         Java.
+                        
+                     </p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Methods</h1>
+    
+    <div class="body conbody"><p class="shortdesc">Use the following methods when making authorization requests.</p>
+        <table class="table" id="methods__ab879149"><caption><span class="table--title-label">Table 1. </span><span class="title">Methods used in authorization requests</span></caption><colgroup><col style="width:33.33333333333333%" /><col style="width:66.66666666666666%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry" id="methods__ab879149__entry__1">Method</th>
+                        <th class="entry" id="methods__ab879149__entry__2">Description and example</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">newInstance</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">Used to create an instance of a category class, such
+                            as Subject.</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">Java example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>Subject user = Subject.newInstance("chris.webber@hdesk.com");</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">addAttribute</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">Used to add attributes to subject, resource,
+                            environment, and recipient category objects.</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">Java example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>Subject user = Subject.newInstance("chris.webber@hdesk.com");
+ user.addAttribute("user_id", "chris.webber")</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">JavaScript example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>var user = new Subject("chris.webber@hdesk.com");
+ user.addAttribute("department", "IT", "Development");</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">simpleDecide</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">Used to send requests to the server for testing and
+                            development. This method takes a user ID, an action, and a resource ID.
+                            However, you cannot pass user or resource attributes, discretionary
+                            policies, environment details, and so on using this method.</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">Java example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>PepResponse pepResponse = pepAgent.simpleDecide("Frank Underwood", "OPEN", "Document.docx");</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">JavaScript example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>pepAgent.simpleDecide("Frank Underwood", "OPEN", "Document.docx").then(function(pepResponse) {
+assert(pepResponse instance of PEPResponse);
+});</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">decide</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">Used to send a single authorization request to the
+                            server, which expects a dynamic list of categories, and returns a
+                            promise that resolves to a single PEPResponse object. This method is
+                            more complex than simpleDecide() because it requires the construction of
+                            user and resource and action objects, rather than IDs alone. With that
+                            complexity, however, comes flexibility and power. This method enables
+                            you to send information such as user or resource attributes, environment
+                            information, destination resource information, host information, and
+                            discretionary policies with the request.</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">Java example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>PepResponse pepResponse = pepAgent.decide(user, action, resource, environment);</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">JavaScript example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>var promise = agent.decide(subject, resource, action, application);
+promise.then(function(result) {
+// result is an object of PEPResponse
+// TODO process the response
+}</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">bulkDecide()</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">Used to send multiple authorization requests to the
+                            server in a single call or payload. For example, a web page might have
+                            several restricted items. When a user visits the page, the PEP can
+                            evaluate the authorization request for all of those items in a single
+                            call. This might or might not be more efficient than
+                                <code class="ph codeph">decide()</code>, depending on the number of queries, the
+                            speed of the network, the cost of evaluating policies, and so on, but it
+                            is conceptually cleaner. For single authorization requests, however, use
+                                <code class="ph codeph">decide()</code>.<p class="p">The server expects the first argument
+                                to be an array of objects of the multiple category (called
+                                associations), followed by the rest of the category objects. Returns
+                                a promise that resolves to an array of PEPResponse objects following
+                                the order of the associations.</p></td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">Java example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>List&lt;Resource&gt; resources = new ArrayList&lt;Resource&gt;();
+resources.add(resource1);
+resources.add(resource2);
+List&lt;PepResponse&gt; responses = pepAgent.bulkDecide(resources, subject, action, host, application, recipient, environment);</code></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="methods__ab879149__entry__1 ">JavaScript example</td>
+                        <td class="entry" headers="methods__ab879149__entry__2 ">
+                            <pre class="pre codeblock"><code>var promise = agent.bulkDecide([resource,resource1], subject, action, application);
+promise.then(function(result) {
+ result.forEach(function(r, index) {
+ // r is an object of PEPResponse
+ // TODO process response
+ });
+});</code></pre>
+                        </td>
+                    </tr>
+                </tbody></table>
+    </div>
+</article></main></div>
+                        
+                        
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

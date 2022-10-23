@@ -1,0 +1,487 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><link rel="shortcut icon" href="favicon.ico"><!----></link><link rel="icon" href="favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2019" /><meta name="DC.rights.owner" content="(C) Copyright 2019" /><meta name="DC.Type" content="concept" /><meta name="description" content="The following is the code for a sample client heartbeat plug-in that is also a subject attribute provider plug-in." /><meta name="DC.Relation" scheme="URI" content="building_a_client_heartbeat_plug_in.html" /><meta name="DC.Relation" scheme="URI" content="sample_server_plug_in_code.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="sample_client_plug_in_code" />        
+      <title>Sample client plug-in code</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="sample_client_plug_in_code-d66e4615" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/blue.css?buildId=2018080803" /></head>
+
+    <body id="sample_client_plug_in_code" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="cc_logo.png" alt="  Control Center 8.7.2 Administrator's Guide  Revision 1  March 2019  " /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">Control Center 8.7.2 Administrator's Guide</span>  <span class="ph booktitlealt">Revision 1</span>  <span class="ph booktitlealt">March 2019</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="concept_cpl_f2h_f2b-d66e21" data-state="leaf" class=" topicref " data-id="concept_cpl_f2h_f2b"><span class="title"><a href="oxy_ex-1/reuse_topics/confidentiality_notice.html">Confidentiality notice</a></span></span></li>
+   <li class="has-children"><span data-tocid="introduction-d66e35" data-state="not-ready" class=" topicref " data-id="introduction"><span class="title"><a href="introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="about_the_dashboard-d66e114" data-state="not-ready" class=" topicref " data-id="about_the_dashboard"><span class="title"><a href="oxy_ex-1/reuse_topics/about_the_dashboard.html">About the Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="manage_access_to_the_console-d66e140" data-state="not-ready" class=" topicref " data-id="manage_access_to_the_console"><span class="title"><a href="manage_access_to_the_console.html">Manage access to the console</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_users_hosts__and_groups-d66e375" data-state="not-ready" class=" topicref " data-id="enrolling_users_hosts__and_groups"><span class="title"><a href="enrolling_users_hosts__and_groups.html">Enrolling users, hosts, and groups</a></span></span></li>
+   <li class="has-children"><span data-tocid="enrolling_other_entities-d66e1154" data-state="not-ready" class=" topicref " data-id="enrolling_other_entities"><span class="title"><a href="enrolling_other_entities.html">Enrolling other entities</a></span></span></li>
+   <li class="has-children"><span data-tocid="defining_custom_properties-d66e1337" data-state="not-ready" class=" topicref " data-id="defining_custom_properties"><span class="title"><a href="defining_custom_properties.html">Defining custom properties</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_policy_enforcers-d66e1448" data-state="not-ready" class=" topicref " data-id="managing_policy_enforcers"><span class="title"><a href="managing_policy_enforcers.html">Managing policy enforcers</a></span></span></li>
+   <li class="has-children"><span data-tocid="policy_and_policy_model_overview-d66e2359" data-state="not-ready" class=" topicref " data-id="policy_and_policy_model_overview"><span class="title"><a href="policy_and_policy_model_overview.html">Policy and Policy Model overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="constructing_and_testing_policies-d66e2461" data-state="not-ready" class=" topicref " data-id="constructing_and_testing_policies"><span class="title"><a href="constructing_and_testing_policies.html">Constructing and testing policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="deploying_and_managing_objects-d66e2751" data-state="not-ready" class=" topicref " data-id="deploying_and_managing_objects"><span class="title"><a href="deploying_and_managing_objects.html">Deploying and managing objects</a></span></span></li>
+   <li class="has-children"><span data-tocid="exporting_and_importing_policies-d66e2875" data-state="not-ready" class=" topicref " data-id="exporting_and_importing_policies"><span class="title"><a href="exporting_and_importing_policies.html">Exporting and Importing Policies</a></span></span></li>
+   <li class="has-children"><span data-tocid="managing_reports-d66e2975" data-state="not-ready" class=" topicref " data-id="managing_reports"><span class="title"><a href="managing_reports.html">Managing Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="overview_of_pep_development-d66e3738" data-state="not-ready" class=" topicref " data-id="overview_of_pep_development"><span class="title"><a href="overview_of_pep_development.html">Overview of PEP development</a></span></span></li>
+   <li class="has-children"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" data-state="not-ready" class=" topicref " data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a></span></span></li>
+   <li class="has-children"><span data-tocid="appendix-d66e5331" data-state="not-ready" class=" topicref " data-id="appendix"><span class="title"><a href="appendix.html">Appendix</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="pep_client_sdk__openaz_api"><span class="title"><a href="pep_client_sdk__openaz_api.html">PEP client SDK (OpenAz API)</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="overview_of_plug_ins"><span class="title"><a href="overview_of_plug_ins.html">Overview of plug-ins</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Developers can extend the functionality of the Control Center and Policy Controller         through plug-ins, which are separately
+                  installed pieces of software written in         Java.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="using_heartbeat_plug_ins"><span class="title"><a href="using_heartbeat_plug_ins.html">Using heartbeat plug-ins</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to develop heartbeat plug-ins.</p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="building_a_client_heartbeat_plug_in"><span class="title"><a href="building_a_client_heartbeat_plug_in.html">Building a client heartbeat plug-in</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A client heartbeat plug-in must implement the following interface.</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="sample_client_plug_in_code"><span class="title"><a href="sample_client_plug_in_code.html">Sample client plug-in code</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The following is the code for a sample client heartbeat plug-in that is also a         subject attribute provider plug-in.
+                  
+                  
+               </p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="pep_client_sdk__openaz_api-d66e3838" class="topicref" data-id="pep_client_sdk__openaz_api" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action pep_client_sdk__openaz_api-d66e3838-link" class="wh-expand-btn"></span><span class="title"><a href="pep_client_sdk__openaz_api.html" id="pep_client_sdk__openaz_api-d66e3838-link">PEP client SDK (OpenAz API)</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the OpenAz API with external and embedded PDPs         (policy decision points).</p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_the_openaz_pep_client_sdk-d66e3849" class="topicref" data-id="about_the_openaz_pep_client_sdk" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_the_openaz_pep_client_sdk.html" id="about_the_openaz_pep_client_sdk-d66e3849-link">About the OpenAz PEP client SDK</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">OpenAz is an open source initiative that provides a standards-based         interface.</p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="configuring_a_development_environment-d66e3860" class="topicref" data-id="configuring_a_development_environment" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="configuring_a_development_environment.html" id="configuring_a_development_environment-d66e3860-link">Configuring a development environment</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">To use this API, you must configure a development environment as described in the PEP         development process section.
+                        
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871" class="topicref" data-id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871-link" class="wh-expand-btn"></span><span class="title"><a href="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep.html" id="configuring_one_way_and_two_way_ssl_authentication_between_pdp_and_pep-d66e3871-link">Configuring one-way and two-way SSL authentication between PDP and PEP</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">For the REST API, you can configure the communication between a PDP server and a PEP         client using one-way or two-way
+                        SSL authentication.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_java_client_library-d66e3908" class="topicref" data-id="using_the_java_client_library" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_java_client_library-d66e3908-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_java_client_library.html" id="using_the_java_client_library-d66e3908-link">Using the Java client library</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to use NextLabs OpenAz PEP Java client with remote PDPs         (REST PDPs and CloudPDPs) and embedded
+                        PDPs.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_javascript_client_library-d66e4063" class="topicref" data-id="using_the_javascript_client_library" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_javascript_client_library-d66e4063-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_javascript_client_library.html" id="using_the_javascript_client_library-d66e4063-link">Using the JavaScript client library</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="rest_api_for_external_pdps-d66e4126" class="topicref" data-id="rest_api_for_external_pdps" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rest_api_for_external_pdps-d66e4126-link" class="wh-expand-btn"></span><span class="title"><a href="rest_api_for_external_pdps.html" id="rest_api_for_external_pdps-d66e4126-link">REST API for external PDPs</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to use the REST API to send policy evaluation requests to         external PDPs (Policy Decision
+                        Points).
+                        
+                     </p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="overview_of_plug_ins-d66e4389" class="topicref" data-id="overview_of_plug_ins" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action overview_of_plug_ins-d66e4389-link" class="wh-expand-btn"></span><span class="title"><a href="overview_of_plug_ins.html" id="overview_of_plug_ins-d66e4389-link">Overview of plug-ins</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Developers can extend the functionality of the Control Center and Policy Controller         through plug-ins, which are separately
+                        installed pieces of software written in         Java.
+                        
+                     </p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="about_control_center_plug_ins-d66e4400" class="topicref" data-id="about_control_center_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_control_center_plug_ins-d66e4400-link" class="wh-expand-btn"></span><span class="title"><a href="about_control_center_plug_ins.html" id="about_control_center_plug_ins-d66e4400-link">About Control Center plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Control Center plug-ins, or extensions, are typically used by the ICENet server         (DABS) component.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="about_policy_controller_plug_ins-d66e4433" class="topicref" data-id="about_policy_controller_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action about_policy_controller_plug_ins-d66e4433-link" class="wh-expand-btn"></span><span class="title"><a href="about_policy_controller_plug_ins.html" id="about_policy_controller_plug_ins-d66e4433-link">About Policy Controller plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Policy Controller is the component that communicates with the Control Center and         the Policy Enforcement Points
+                              (PEPs).
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="using_attribute_provider_plug_ins-d66e4466" class="topicref" data-id="using_attribute_provider_plug_ins" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_attribute_provider_plug_ins-d66e4466-link" class="wh-expand-btn"></span><span class="title"><a href="using_attribute_provider_plug_ins.html" id="using_attribute_provider_plug_ins-d66e4466-link">Using attribute provider plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to develop attribute provider plug-ins.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="true"><span data-tocid="using_heartbeat_plug_ins-d66e4554" class="topicref" data-id="using_heartbeat_plug_ins" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action using_heartbeat_plug_ins-d66e4554-link" class="wh-expand-btn"></span><span class="title"><a href="using_heartbeat_plug_ins.html" id="using_heartbeat_plug_ins-d66e4554-link">Using heartbeat plug-ins</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes how to develop heartbeat plug-ins.</p>
+                           </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="about_heartbeat_plug_ins-d66e4565" class="topicref" data-id="about_heartbeat_plug_ins" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="about_heartbeat_plug_ins.html" id="about_heartbeat_plug_ins-d66e4565-link">About heartbeat plug-ins</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Policy Controllers are configured to send regular heartbeats to the Control Center to         indicate that they are running
+                                    normally.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li role="treeitem" aria-expanded="true"><span data-tocid="building_a_client_heartbeat_plug_in-d66e4576" class="topicref" data-id="building_a_client_heartbeat_plug_in" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action building_a_client_heartbeat_plug_in-d66e4576-link" class="wh-expand-btn"></span><span class="title"><a href="building_a_client_heartbeat_plug_in.html" id="building_a_client_heartbeat_plug_in-d66e4576-link">Building a client heartbeat plug-in</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A client heartbeat plug-in must implement the following interface.</p>
+                                 </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="preparing_the_request-d66e4587" class="topicref" data-id="preparing_the_request" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="preparing_the_request.html" id="preparing_the_request-d66e4587-link">Preparing the request</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Before each heartbeat, the Policy Controller calls the             <code class="ph codeph">prepareRequest( )</code> method in each registered heartbeat         plug-in.
+                                          
+                                       </p>
+                                       </span></span></span></li>
+                           <li role="treeitem"><span data-tocid="processing_the_response-d66e4601" class="topicref" data-id="processing_the_response" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="processing_the_response.html" id="processing_the_response-d66e4601-link">Processing the response</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">When the Policy Controller receives the heartbeat response from the Control Center,         it calls the <code class="ph codeph">processResponse( )</code> method in the client plug-in.
+                                          
+                                       </p>
+                                       </span></span></span></li>
+                           <li role="treeitem" class="active"><span data-tocid="sample_client_plug_in_code-d66e4615" class="topicref" data-id="sample_client_plug_in_code" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="sample_client_plug_in_code.html" id="sample_client_plug_in_code-d66e4615-link">Sample client plug-in code</a><span class="wh-tooltip">
+                                       
+                                       <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The following is the code for a sample client heartbeat plug-in that is also a         subject attribute provider plug-in.
+                                          
+                                          
+                                       </p>
+                                       </span></span></span></li>
+                        </ul>
+                     </li>
+                     <li role="treeitem" aria-expanded="false"><span data-tocid="building_a_server_heartbeat_plug_in-d66e4626" class="topicref" data-id="building_a_server_heartbeat_plug_in" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action building_a_server_heartbeat_plug_in-d66e4626-link" class="wh-expand-btn"></span><span class="title"><a href="building_a_server_heartbeat_plug_in.html" id="building_a_server_heartbeat_plug_in-d66e4626-link">Building a server heartbeat plug-in</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A Server Heartbeat plug-in must implement the following interface.</p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="report_log_views-d66e4658" class="topicref" data-id="report_log_views" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action report_log_views-d66e4658-link" class="wh-expand-btn"></span><span class="title"><a href="report_log_views.html" id="report_log_views-d66e4658-link">Report log views</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Report developers can design custom reports against NextLabs policy activity data         that has been written to the Activity
+                              Journal database.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="using_the_sample_enforcer-d66e4768" class="topicref" data-id="using_the_sample_enforcer" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action using_the_sample_enforcer-d66e4768-link" class="wh-expand-btn"></span><span class="title"><a href="using_the_sample_enforcer.html" id="using_the_sample_enforcer-d66e4768-link">Using the sample enforcer</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section explains how to use the sample enforcer, which illustrates the basic         controls available in SDKs.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="installing_the_policy_adapter_sdk-d66e4847" class="topicref" data-id="installing_the_policy_adapter_sdk" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action installing_the_policy_adapter_sdk-d66e4847-link" class="wh-expand-btn"></span><span class="title"><a href="installing_the_policy_adapter_sdk.html" id="installing_the_policy_adapter_sdk-d66e4847-link">Installing the Policy Adapter SDK</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides instructions for installing the Policy Adapter SDK.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="c_and_c___api_reference-d66e4978" class="topicref" data-id="c_and_c___api_reference" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c_and_c___api_reference-d66e4978-link" class="wh-expand-btn"></span><span class="title"><a href="c_and_c___api_reference.html" id="c_and_c___api_reference-d66e4978-link">C and C++ API reference</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section provides a reference of API calls for C and C++.</p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Sample client plug-in code</h1>
+    
+    <div class="body conbody"><p class="shortdesc">The following is the code for a sample client heartbeat plug-in that is also a
+        subject attribute provider plug-in. </p>
+        <section class="section" id="sample_client_plug_in_code__ai1133025">
+            <p class="p">This plug-in is a utility for passing dynamic user attributes to the Policy
+                Controller for policy evaluation. It lets the policy designer specify, through a
+                userattributes.txt file in a configuration folder, which user attributes should be
+                sent.</p>
+            <p class="p">The code after the <code class="ph codeph">processResponse()</code> method is specific to this
+                plug-in’s implementation and is shown here for completeness; it is not essential to
+                understanding how client heartbeat plug-ins work.</p>
+            <pre class="pre codeblock"><code>package com.nextlabs.plugins.userattributes;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
+import com.mycompany.destiny.agent.controlmanager.AgentTypeEnum;
+import com.mycompany.destiny.agent.controlmanager.ControlMngr;
+import com.mycompany.destiny.agent.controlmanager.IControlManager;
+import com.mycompany.destiny.agent.ipc.IOSWrapper;
+import com.mycompany.destiny.agent.ipc.OSWrapper;
+import com.mycompany.framework.comp.ComponentManagerFactory;
+import com.mycompany.framework.expressions.EvalValue;
+import com.mycompany.framework.expressions.IEvalValue;
+import com.mycompany.framework.expressions.IMultivalue;
+import com.mycompany.framework.utils.SerializationUtils;
+import com.mycompany.pf.domain.destiny.subject.IDSubject;
+import com.mycompany.pf.domain.destiny.serviceprovider.IHeartbeatServiceProvider;
+import com.mycompany.pf.domain.destiny.serviceprovider.ISubjectAttributeProvider;
+import com.mycompany.pf.domain.destiny.serviceprovider.ServiceProviderException;
+import com.nextlabs.plugins.userattributes.dto.UserAttributesRequestDTO;
+import com.nextlabs.plugins.userattributes.dto.UserAttributesResponseDTO;
+public class UserAttributesClient implements IHeartbeatServiceProvider, ISubjectAttributeProvider {
+ private long timestamp = 0;
+ private static String hostName;
+ private IOSWrapper osWrapper = ComponentManagerFactory.getComponentManager().
+getComponent(OSWrapper.class);
+ private IControlManager controlMngr= ComponentManagerFactory.getComponentManager().
+getComponent(ControlMngr.COMP_INFO);
+ private ClassLoader classLoader = getClass().getClassLoader();
+ private static AgentTypeEnum agentType;
+ private Map&lt;String, IEvalValue[]&gt; users = new HashMap&lt;String, IEvalValue[]&gt;();
+ private Map&lt;String, Integer&gt; attrToIndexMap = new HashMap&lt;String, Integer&gt;();
+ private static final Log log = LogFactory.getLog(UserAttributesClient.class.getName());
+ public void init() {
+ hostName = osWrapper.getFQDN();
+ agentType = AgentTypeEnum.getAgentTypeEnum(controlMngr.getAgentType().getValue());
+ try {
+ loadFromDisk();
+ } catch (FileNotFoundException e) {
+ log.info("No cached attribute information stored on disk");
+ } catch (IOException e) {
+ log.error("Unable to load attributes information from disk", e);
+ }
+ }
+ public Serializable prepareRequest(String id) {
+ if (UserAttributesRequestDTO.PLUGIN.equals(id)) {
+ String[] currentUsers;
+ if (agentType == AgentTypeEnum.DESKTOP) {
+ // get all users
+ currentUsers = currentUserIds();
+ } else {
+ currentUsers = new String[1];
+ currentUsers[0] = "*";
+ }
+ UserAttributesRequestDTO request = new UserAttributesRequestDTO(timestamp, hostName, currentUsers);
+ return request;
+ } 
+ return null;
+ }
+ public void processResponse(String id, String data) {
+    // We can't use the default classloader to deserialize here,     // because it can't see UserAttributesRequestDTO. 
+ Serializable obj = SerializationUtils.unwrapSerialized(data, classLoader);
+ if (UserAttributesRequestDTO.PLUGIN.equals(id)) {
+ if (obj == null) {
+ return;
+ }
+ UserAttributesResponseDTO response = (UserAttributesResponseDTO)obj;
+ update(response);
+ try {
+ saveToDisk(response);
+ } catch (IOException e) {
+ log.error("Failed to save attribute information to disk", e);
+ }
+ }
+ }
+ private synchronized void update(UserAttributesResponseDTO response) {
+ if (response == null) {
+ return;
+ }
+ timestamp = response.getTimestamp();
+ 
+ int i = 0;
+ for (String attribute : response.getAttributes()) {
+ attrToIndexMap.put(attribute.toLowerCase(), i++);
+ }
+ for (UserAttributesResponseDTO.IDAndValues idAndVal : response.getUserInformation()) {
+ String id = idAndVal.getUserId();
+ List&lt;IEvalValue&gt; values = idAndVal.getValues();
+ 
+ users.put(id, values.toArray(new IEvalValue[values.size()]));
+ }
+ }
+ private void saveToDisk(UserAttributesResponseDTO response) throws IOException, FileNotFoundException {
+ ObjectOutput oos = null;
+ try {
+ oos = getOutputStream();
+ response.writeExternal(oos);
+ } finally {
+ if (oos != null) {
+ oos.close();
+ }
+ }
+ }
+ private void loadFromDisk() throws IOException, FileNotFoundException {
+ UserAttributesResponseDTO response = new UserAttributesResponseDTO();
+
+ ObjectInput ois = null;
+ try {
+ ois = getInputStream();
+ response.readExternal(ois);
+ 
+ update(response);
+ } finally {
+ if (ois != null) {
+ ois.close();
+ }
+ }
+ }
+ public synchronized IEvalValue getAttribute(IDSubject subj, String attribute) throws ServiceProviderException {
+ String id = subj.getUid();
+ log.debug("Getting attribute " + attribute + " for user " + id);
+ IEvalValue[] values = users.get(subj.getUid());
+ if (values == null) {
+ log.debug("No attributes recorded for user " + id);
+ return IEvalValue.NULL;
+ }
+ Integer index = attrToIndexMap.get(attribute.toLowerCase());
+ if (index == null) {
+ log.debug("Attribute " + attribute + " unknown for user " + id);
+ return IEvalValue.NULL;
+ }
+ if (index &gt;= values.length) {
+ log.debug("Attribute " + attribute + " invalid for user " + id);
+ return IEvalValue.NULL;
+ }
+ IEvalValue val = values[index];
+ if (val.getValue() instanceof IMultivalue) {
+ StringBuilder sb = new StringBuilder("User " + id + ": " + attribute + "=");
+ boolean first = true;
+ for (IEvalValue v : (IMultivalue)val.getValue()) {
+ if (!first) {
+ sb.append(", ");
+ }
+ first = false;
+ sb.append((String)v.getValue());
+ }
+ log.debug(sb.toString());
+ } else {
+ log.debug("User " + id + ": " + attribute + "=" + (String)val.getValue());
+ }
+ return val;
+ }
+ private ObjectInput getInputStream() throws IOException, FileNotFoundException {
+ return new ObjectInputStream(new FileInputStream(getStoreFileName()));
+ }
+ private ObjectOutput getOutputStream() throws IOException, FileNotFoundException {
+ return new ObjectOutputStream(new FileOutputStream(getStoreFileName()));
+ }
+ private String getStoreFileName() {
+ return new File("userattributes.bin").getAbsolutePath();
+ }
+ private String[] currentUserIds() {
+ return osWrapper.getLoggedInUsers();
+ }</code></pre>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="sample_server_plug_in_code.html" title="Sample server plug-in code">Sample server plug-in code</a></div></div></nav></div>
+                                                
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+        <div class="wh_navigation_links">
+            <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+        </div>
+        
+        <div class="wh_related_links">
+            <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo relconcepts"><strong>Related concepts</strong><br /><div class="related_link"><a class="navheader_parent_path" href="sample_server_plug_in_code.html" title="Sample server plug-in code">Sample server plug-in code</a></div></div></nav></div>
+        </div>
+
+
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    CONFIDENTIALITY NOTICE <div>THIS DOCUMENT IS CONFIDENTIAL AND PROPRIETARY TO NEXTLABS, INC. AND MAY NOT BE REPRODUCED, PUBLISHED OR DISCLOSED TO OTHERS WITHOUT COMPANY AUTHORIZATION.</div> <div> Copyright (C) 2019 NextLabs, Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>
